@@ -12,16 +12,6 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
-      
-      <!-- Reading time -->
-      {% capture words %}
-        {{ content | number_of_words | minus: 180 }}
-      {% endcapture %}
-      {% unless words contains "-" %}
-      • <span>
-        {{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}
-      </span>
-      {% endunless %}
     </p>
   </header>
 
