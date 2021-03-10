@@ -32,7 +32,8 @@ github_username:  kstawinski
 theme: minima
 plugins:
   - jekyll-feed
-permalink: pretty
+permalink: /:title/
+livereload: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
