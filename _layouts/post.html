@@ -9,9 +9,15 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% include date.html date=page.date %}
       </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span class="p-author h-card" itemprop="name">
+            {% if page.author %}
+              {{ page.author }}
+            {% else %}
+              {{ site.author }}
+            {% endif %}
+          </span>
+        </span>
     </p>
   </header>
 
