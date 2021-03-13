@@ -29,6 +29,7 @@ url: "https://kstawinski.github.io"
 github_username:  kstawinski
 
 # Build settings
+include: ['_pages']
 theme: minima
 plugins:
   - jekyll-feed
