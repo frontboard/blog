@@ -2,6 +2,7 @@
 layout: post
 title: "Wstęp do Progressive Web Apps"
 date: 2021-03-11 11:25:00 +0100
+published: false
 ---
 PWA, czyli **progresywne aplikacje mobilne** to zwykłe strony internetowe i aplikacje mogące być wykorzystywane jako aplikacje mobilne. Oznacza to mniej więcej tyle, że użytkownik korzystając ze strony może zaintalować ją na swoim telefonie i używać jak jednej z wielu natywnych aplikacji.
 
