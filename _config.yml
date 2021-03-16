@@ -14,4 +14,10 @@ lang: pl
 theme: minima
 plugins:
   - jekyll-feed
-permalink: /:title
+  - jekyll-paginate
+permalink: /:title/
+
+# Pagination settings
+paginate: 5
+paginate_path: /strona-:num/
+seo_paginator_message: "Strona %<current>s | "
