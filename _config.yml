@@ -22,3 +22,7 @@ permalink: /:title/
 paginate: 5
 paginate_path: /strona-:num/
 seo_paginator_message: "Strona %<current>s | "
+
+# Disqus comments
+disqus:
+  shortname: jsw60dni
