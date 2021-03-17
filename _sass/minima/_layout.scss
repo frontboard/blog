@@ -229,8 +229,13 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
-  p a {
-    text-decoration: underline;
+  p {
+    a {
+      text-decoration: underline;
+    }
+    strong {
+      font-weight: 600;
+    }
   }
 
   h2 {
