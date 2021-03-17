@@ -93,3 +93,5 @@ W dużym skrócie, **Vue.js**:
 * posiada **świetnie opracowaną [dokumentację](https://vuejs.org/v2/guide/)**. Liczne przykłady i łatwość w znalezieniu informacji sprawiają, że początkujący developerzy bez problemu opanują podstawy tej biblioteki.
 
 Chyba warto?
+
+Powstał kolejny post dotyczący [dyrektyw warunkowych w Vue.js](/dyrektywy-warunkowe-vue-js/) - rzuć okiem, jeśli temat Vue jest dla Ciebie nowością.

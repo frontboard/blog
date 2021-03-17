@@ -6,12 +6,12 @@ layout: post
 categories: javascript vue
 img: /assets/img/vue02.png
 ---
-Dyrektywy warunkowe w Vue.js nieco przypominają czysto JS-owe instrukcje warunkowe. Zastosowania są podobne, aczkolwiek zapis jest nieco inny. Nie da się ukryć, że nie są zbyt skomplikowane, ale mogą okazać się bardzo przydatne (a wręcz niezbędne). 
+Dyrektywy warunkowe w Vue.js nieco przypominają czysto [JS-owe instrukcje warunkowe](/instrukcje-warunkowe-jak-z-nich-korzystac/). Zastosowania są podobne, ale zapis jest nieco inny. Nie da się ukryć, że nie są zbyt skomplikowane, ale mogą okazać się bardzo przydatne (a wręcz niezbędne!).
 
 ## Dyrektywy warunkowe
-Dyrektywy warunkowe przyjmują jako swój parametr na przykład wartość obiektu `data` (dla przypomnienia – tam znajdują się wszelkie dane) lub wyrażenie i zwracają wartość logiczną *true* lub *false*. Jest to coś, co każdy programista uczący się Vue.js powinien znać. Do naszej dyspozycji mamy 3 dyrektywy: `v-if`, `v-else` i `v-show`. 
+Dyrektywy warunkowe przyjmują jako swój parametr na przykład wartość obiektu `data` (dla przypomnienia – tam znajdują się wszelkie dane) lub wyrażenie i zwracają wartość logiczną. Jest to coś, co każdy programista uczący się Vue.js powinien znać. Do naszej dyspozycji mamy 3 dyrektywy: `v-if`, `v-else` i `v-show`. 
 
-Zapisujemy je w kodzie HTML, a dokładniej w obrębie miejsca określonego przy początkowej konfiguracji Vue (`el`).
+Zapisujemy je w kodzie HTML, a dokładniej w obrębie miejsca określonego przy początkowej konfiguracji Vue (patrz: `el`).
 
 ```js
 var app = new Vue({
@@ -22,10 +22,10 @@ var app = new Vue({
 });
 ```
 
-Na potrzeby artykułu stworzyłem już "zmienną" `show` i ustawiłem jej wartość logiczną na *true*. 
+Na potrzeby artykułu stworzyłem już "zmienną" `show` i ustawiłem jej wartość logiczną na `true`. 
 
 ### v-if
-Dyrektywa warunkowe `v-if` w Vue.js pozwala na wyświetlenie danego elementu, jeśli wartość logiczna w niej określona będzie prawdziwa. Co warto zaznaczyć – **element w ogóle nie pojawi się w DOM-ie, jeśli wartość logiczna będzie równa *false***. Nie zawsze tak jest, ale o tym w dalszej części artykułu. W parze z `v-if` można stosować dyrektywę `v-else`, w przypadku `v-show` już nie.
+Dyrektywa warunkowe `v-if` w Vue.js pozwala na wyświetlenie danego elementu, jeśli wartość logiczna w niej określona będzie prawdziwa. Co warto zaznaczyć – **element w ogóle nie pojawi się w DOM-ie, jeśli wartość logiczna będzie równa `false`**. W parze z `v-if` można stosować dyrektywę `v-else`, w przypadku `v-show` już nie.
 
 ```html
 <span v-if="show">Wartość show jest równa true</span>
@@ -46,7 +46,7 @@ Zgodnie z tym co wspomniałem wyżej, możemy również korzystać z wyrażeń z
 ```
 
 ### v-show
-Dyrektywa `v-show` działa bardzo podobnie, jak `v-if` z tym, że jest **jedna ważna różnica**, o której wspomniałem wcześniej. `v-if` w przypadku wykrycia wartości podanej w dyrektywie jako *false* nie pokaże elementu w DOM-ie. Dyrektywa `v-show` spowoduje, że element otrzyma CSS-ową właściwość `display: none;` – czyli de facto nadal będzie istniał w DOM-ie, ale zostanie ukryty CSS-em. Dodatkowo, nie możemy korzystać z dyrektywy `v-if` w parze z `v-show`.
+Dyrektywa `v-show` działa bardzo podobnie, jak `v-if` z tym, że jest **jedna ważna różnica**. `v-if` w przypadku wykrycia wartości podanej w dyrektywie jako `false` nie pokaże elementu w DOM-ie. **Dyrektywa `v-show` spowoduje, że element otrzyma CSS-ową właściwość `display: none;`** – czyli de facto nadal **będzie istniał w DOM-ie, ale zostanie ukryty CSS-em**. Dodatkowo, nie możemy korzystać z dyrektywy `v-if` w parze z `v-show`.
 
 Przykładowe użycie:
 
@@ -75,6 +75,6 @@ Ostatnia z dyrektyw, możliwa do stosowania w parze z `v-if`. Pomocna w sytuacji
 ```
 
 ## Podsumowanie
-Dzisiaj poznaliśmy bardzo przydatne i z pewnością często stosowane funkcje w Vue.js. Zapraszam do odwiedzenia grupy [JavaScript Polska](https://www.facebook.com/groups/jspolska/), jak i [fanpage bloga - @frontboardpl](https://www.facebook.com/frontboardpl/). W obydwóch miejscach czasami wrzucam zapowiedzi nadchodzących postów. 
+Dzisiaj poznaliśmy bardzo przydatne i z pewnością często stosowane funkcje w Vue.js. Zapraszam do odwiedzenia grupy [JavaScript Polska](https://www.facebook.com/groups/jspolska/), jak i [fanpage bloga - @frontboardpl](https://www.facebook.com/frontboardpl/). W obydwóch miejscach czasami wrzucam zapowiedzi nadchodzących postów.
 
-Do przeczytania w najbliższym czasie! 
+Do przeczytania w najbliższym czasie!
