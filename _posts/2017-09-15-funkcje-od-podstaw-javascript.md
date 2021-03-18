@@ -41,7 +41,7 @@ function checkTemp (yourTemp) {
 }
 {% endhighlight %}
 
-Nie musimy jeszcze sprawdzać czy ten kod działa. W zasadzie to nawet nie ma po co, bo jej nie wywołaliśmy. Dzięki mechanizmowi hoistingu nie ma znaczenia czy wywołamy funkcję na początku czy na końcu kodu. Gdyby ktoś chciał wiedzieć nieco więcej na ten temat - [odsyłam Cię do tego wpisu](https://www.endfront.pl/zakres-zmiennych-czyli-zmienne-lokalne-globalne/).
+Nie musimy jeszcze sprawdzać czy ten kod działa. W zasadzie to nawet nie ma po co, bo jej nie wywołaliśmy. Dzięki mechanizmowi hoistingu nie ma znaczenia czy wywołamy funkcję na początku czy na końcu kodu. Gdyby ktoś chciał wiedzieć nieco więcej na ten temat - [odsyłam Cię do tego wpisu](/zakres-zmiennych-zmienne-lokalne-globalne-javascript).
 
 Funkcję wywołujemy poprzez podanie jej nazwy, ewentualnie uzupełnienia parametrów i zakończenia średnikiem.
 
@@ -103,7 +103,7 @@ Wynik?
 *Wynik widoczny po kilkukrotnym wywołaniu funkcji checkTemp*
 
 ## Funkcje strzałkowe
-W ECMAScript 2015 wprowadzone zostały między innymi funkcje strzałkowe, które oferują zdecydownaie krótszą składnię, nie posiadają własnego `this` (kierują do obiektu `window`). W kwietniu napisałem post nt. [funkcji strzałkowych w JavaScript](/2018/04/02/funkcje-strzalkowe-es6-javascript/). Zachęcam do lektury, bo to dosyć ciekawy temat.
+W ECMAScript 2015 wprowadzone zostały między innymi funkcje strzałkowe, które oferują zdecydownaie krótszą składnię, nie posiadają własnego `this` (kierują do obiektu `window`). W kwietniu napisałem post nt. [funkcji strzałkowych w JavaScript](/funkcje-strzalkowe-es6-javascript). Zachęcam do lektury, bo to dosyć ciekawy temat.
 
 <b>Przykładowe wykorzystanie funkcji strzałkowej:</b>
 ```javascript
@@ -121,4 +121,4 @@ Jak dla mnie – super!
 
 ## Podsumowanie #005
 
-Dzisiaj poznaliśmy funkcje w JavaScript. Ilość ich zastosować moglibyśmy mnożyć w nieskończoność… Zachęcam do polubienia [fanpage endfront.pl](https://www.facebook.com/endfrontpl/), bo to tam najpierw pojawia się informacja o nowym poście!
+Dzisiaj poznaliśmy funkcje w JavaScript. Ilość ich zastosować moglibyśmy mnożyć w nieskończoność… Zachęcam do polubienia [fanpage Frontboard.pl](https://www.facebook.com/frontboardpl/), bo to tam najpierw pojawia się informacja o nowym poście!

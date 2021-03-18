@@ -8,7 +8,7 @@ img: /assets/img/jsw60dni.png
 redirect_from:
   - /zakres-zmiennych-czyli-zmienne-lokalne-globalne
 ---
-Na pewno wiesz już jak korzystać ze zmiennych w JavaScript. Jeżeli nie, odsyłam Cię do [pierwszego wpisu](/konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych/). Tym postem nieco przybliżę Ci temat zmiennych lokalnych i globalnych, czyli inaczej zmiennych o zasięgu lokalnym/globalnym oraz wyjaśnię, dlaczego nie warto pomijać słówka `var` przy ich deklarowaniu. Let's go!
+Na pewno wiesz już jak korzystać ze zmiennych w JavaScript. Jeżeli nie, odsyłam Cię do [pierwszego wpisu](/konstrukcja-zmiennej-debugowanie-kodu-javascript). Tym postem nieco przybliżę Ci temat zmiennych lokalnych i globalnych, czyli inaczej zmiennych o zasięgu lokalnym/globalnym oraz wyjaśnię, dlaczego nie warto pomijać słówka `var` przy ich deklarowaniu. Let's go!
 
 ## Let i const
 
@@ -87,7 +87,7 @@ alert(pi);
 
 *Hoisting*, czyli z języka angielskiego podnoszenie. Nazwa doskonale opisuje to, co ten hoisting właściwie robi. W teorii JavaScript wyszukuje wszystkie funkcje, zmienne i przenosi je na samą górę kodu. W praktyce chodzi o to, że możemy skorzystać z danej funkcji wcześniej, niż ją zdefiniujemy, bo hoisting spowoduje, że finalnie **funkcja będzie w kodzie wyżej niż deklaracja jej użycia**.
 
-Aby pokazać, jak działa hoisting, za pomocą JS napiszę funkcję, która poda Wam informacje nt. bloga. Na początku kodu ją wywołam, a później zapiszę, co ma robić. Jeżeli nie wiesz, co robi poniższy kod - koniecznie przeczytaj [pierwszy wpis na blogu](/konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych/), w którym piszę nieco więcej o zmiennych.
+Aby pokazać, jak działa hoisting, za pomocą JS napiszę funkcję, która poda Wam informacje nt. bloga. Na początku kodu ją wywołam, a później zapiszę, co ma robić. Jeżeli nie wiesz, co robi poniższy kod - koniecznie przeczytaj [pierwszy wpis na blogu](/konstrukcja-zmiennej-debugowanie-kodu-javascript), w którym piszę nieco więcej o zmiennych.
 
 ```js
 showBlogInfo();
@@ -119,4 +119,4 @@ test();
 
 Było trochę teorii i trochę praktyki. Z wykorzystaniem funkcji pokazałem, dlaczego nie warto rezygnować ze słówka `var` przy tworzeniu zmiennych (psst, `let` i `const` mogą być lepszym wyjściem z sytuacji!). Wspomniałem również o hoistingu, o którym więcej możesz przeczytać [w dokumentacji MDN](https://developer.mozilla.org/en/docs/Glossary/Hoisting). 
 
-A teraz, zobacz kolejny wpis z serii "JavaScript w 60 dni" o [instrukcjach warunkowych](/instrukcje-warunkowe-jak-z-nich-korzystac/)!
+A teraz, zobacz kolejny wpis z serii "JavaScript w 60 dni" o [instrukcjach warunkowych](/instrukcje-warunkowe-if-switch-javascript)!

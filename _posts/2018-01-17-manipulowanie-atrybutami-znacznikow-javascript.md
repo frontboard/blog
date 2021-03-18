@@ -87,7 +87,7 @@ const checkbox = document.querySelector("#showPassword");
 checkbox.addEventListener("click", togglePassword);
 {% endhighlight %}
 
-Niezbędna będzie dla nas funkcja [setAttribute](https://developer.mozilla.org/pl/docs/Web/API/Element/setAttribute), dzięki której zmienimy wartość atrybutu `type`. Oczywiście, musimy najpierw sprawdzić odpowiednią [instrukcją warunkową](https://endfront.pl/instrukcje-warunkowe-jak-z-nich-korzystac/), czy checkbox jest zaznaczony.
+Niezbędna będzie dla nas funkcja [setAttribute](https://developer.mozilla.org/pl/docs/Web/API/Element/setAttribute), dzięki której zmienimy wartość atrybutu `type`. Oczywiście, musimy najpierw sprawdzić odpowiednią [instrukcją warunkową](/instrukcje-warunkowe-if-switch-javascript), czy checkbox jest zaznaczony.
 
 {% highlight javascript %}
 function togglePassword () {
@@ -112,4 +112,4 @@ _Demo dostępne [tutaj](https://codepen.io/kstawinski/pen/EobrrJ?editors=1010)._
 
 ## Podsumowanie
 
-Jak mogliście zauważyć, sposobów na edycję atrybutów jest wiele. Należy jednak pamiętać o tym, że poszczególne atrybuty mogą posiadać swoje własne metody do zarządzania nimi. Zachęcam do obserwowania [fanpage bloga](http://fb.me/endfrontpl) bądź subskrybcji [RSS](/feed/), aby być na bieżąco! :)
+Jak mogliście zauważyć, sposobów na edycję atrybutów jest wiele. Należy jednak pamiętać o tym, że poszczególne atrybuty mogą posiadać swoje własne metody do zarządzania nimi. Zachęcam do obserwowania [fanpage bloga](http://fb.me/frontboardpl) bądź subskrybcji [RSS](/feed.xml), aby być na bieżąco! :)

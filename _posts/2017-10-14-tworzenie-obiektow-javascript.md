@@ -12,7 +12,7 @@ Obiekt to taka jedna zmienna, która pozwala na przypisanie jej większej ilośc
 
 ## Konstrukcja obiektów
 
-W grupie [Programowanie - wsparcie na starcie](https://www.facebook.com/groups/157790704649699/) padło kiedyś pytanie co komu sprawia największy problem w programowaniu. Jeden z członków grupy odpowiedział, że domknięcia w JavaScript. Nie dziwię się, bo zwróćcie uwagę, że konstrukcja obiektów jest nieco inna niż [tablic](https://endfront.pl/tablice-javascript/), choć równie prosta do opanowania.
+W grupie [Programowanie - wsparcie na starcie](https://www.facebook.com/groups/157790704649699/) padło kiedyś pytanie co komu sprawia największy problem w programowaniu. Jeden z członków grupy odpowiedział, że domknięcia w JavaScript. Nie dziwię się, bo zwróćcie uwagę, że konstrukcja obiektów jest nieco inna niż [tablic](/tablice-javascript), choć równie prosta do opanowania.
 
 Zabierajmy się za stworzenie obiektu.
 
@@ -34,7 +34,7 @@ const aboutMe = {
 
 Celowo wybrałem taki przykład, aby pokazać jakie wartości mogą przyjmować obiekty: wartości logiczne, liczby i ciągi znaków. Zwróć uwagę na to, że ostatnia wartość w obiekcie nie kończy się przecinkiem. Może, choć nie musi.
 
-Chcąc zaprezentować siebie przy pomocy obiektu musimy utworzyć metodę (funkcje w obiektach nazywamy metodami). Przez użycie wartości logicznej true lub false, aby poprawnie wyświetlić informacje o nas, będziemy w metodzie musieli skorzystać z [instrukcji warunkowej](https://endfront.pl/instrukcje-warunkowe-jak-z-nich-korzystac/).
+Chcąc zaprezentować siebie przy pomocy obiektu musimy utworzyć metodę (funkcje w obiektach nazywamy metodami). Przez użycie wartości logicznej true lub false, aby poprawnie wyświetlić informacje o nas, będziemy w metodzie musieli skorzystać z [instrukcji warunkowej](/instrukcje-warunkowe-if-switch-javascript).
 
 {% highlight javascript %}
 const aboutMe = {

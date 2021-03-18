@@ -61,7 +61,7 @@ else if (userAge >= requiredAge) {
 
 Wykorzystanie `else` w tym przypadku byłoby złym rozwiązaniem, bo kod wykona się w każdej sytuacji, gdy wiek użytkownika nie jest mniejszy niż wymagany. Postawiając dowolny ciąg znaków do zmiennej `userAge` wyjątek `else` przepuści użytkownika dalej i wyświetli komunikat powitalny. Lepiej byłoby tutaj zastosować `else if`, a `else` stosować na końcu z informacją o błędzie.
 
-Jeżeli nie za bardzo ogarniasz ten kod - odsyłam Cię do posta, w którym pokazuję [użycie zmiennych w JavaScript](/konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych/). Zastosowanie `else if` pozwoli na dopisanie jeszcze jednego ogólnego wyjątku - `else`, który wykona się w przypadku, gdy żaden inny warunek nie zostanie spełniony. Dzięki temu możemy mieć w kodzie instrukcję `if`, później jeden bądź kilka `else if`, a na końcu `else`.
+Jeżeli nie za bardzo ogarniasz ten kod - odsyłam Cię do posta, w którym pokazuję [użycie zmiennych w JavaScript](/konstrukcja-zmiennej-debugowanie-kodu-javascript). Zastosowanie `else if` pozwoli na dopisanie jeszcze jednego ogólnego wyjątku - `else`, który wykona się w przypadku, gdy żaden inny warunek nie zostanie spełniony. Dzięki temu możemy mieć w kodzie instrukcję `if`, później jeden bądź kilka `else if`, a na końcu `else`.
 
 ## Switch
 
@@ -112,4 +112,4 @@ Rzecz jasna, przeglądarka wyświetli nam "To jest Janek". `break` użyte w obu 
 
 Poopowiadałem co nieco o instrukcjach warunkowych, których używa się praktycznie wszędzie. Mam nadzieję, że coś z tego wpisu wynieśliście i podnieśliście swoje umiejętności, jeżeli chodzi o JavaScript ;) Gdyby były jakieś pytania - zapraszam do kontaktu przez [fanpage Frontboard.pl](https://www.facebook.com/frontboardpl/), mailowo lub za pomocą komentarza.
 
-Kolejny wpis dotyczy użycia [pętli `while`, `for`, `do… while` w JavaScript](/poznajemy-petle-while-for-dowhile/) - sprawdź koniecznie!
+Kolejny wpis dotyczy użycia [pętli `while`, `for`, `do… while` w JavaScript](/poznajemy-petle-while-for-dowhile-javascript) - sprawdź koniecznie!

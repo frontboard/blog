@@ -47,7 +47,7 @@ a => {};
 Stworzyłem funkcję `dodaj`, której zadaniem jest dodanie do siebie dwóch podanych liczb. Po wywołaniu (z parametrami `x=3, y=10`) i wrzuceniu do konsoli, otrzymujemy poprawny wynik: **13**.
 
 ## Domyślne parametry
-Dzięki [ECMAScript](https://pl.wikipedia.org/wiki/ECMAScript) 2015 ustawianie domyślnych parametrów funkcji jest banalnie proste. Oczywiście, można skorzystać z operatora [typeof](https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Operatory/Operator_typeof) i porównania za pomocą [instrukcji warunkowej](/2017/09/05/instrukcje-warunkowe-jak-z-nich-korzystac/), ale skoro możemy zrobić to prościej – dlaczego nie?
+Dzięki [ECMAScript](https://pl.wikipedia.org/wiki/ECMAScript) 2015 ustawianie domyślnych parametrów funkcji jest banalnie proste. Oczywiście, można skorzystać z operatora [typeof](https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Operatory/Operator_typeof) i porównania za pomocą [instrukcji warunkowej](/instrukcje-warunkowe-if-switch-javascript), ale skoro możemy zrobić to prościej – dlaczego nie?
 
 ```javascript
 const about = (imie="Jan", age=10) => `Imię to ${imie}, wiek jest rowny ${age}`;
@@ -93,7 +93,7 @@ const about = (name) => {
 
 ## Zmiana kontekstu `this`
 
-We wpisie „[Tworzenie obiektów w JavaScript](/2017/10/14/tworzenie-obiektow-w-javascript/)” pisałem o funkcji wewnątrz obiektu (krócej: o metodzie). Do opisania siebie za pomocą obiektu użyłem operatora `this`, który powinien odwołać się do obiektu i wskazanych wartości. Odwołał się, dane zostały poprawnie podstawione, wszystko działa. A jak będzie to wyglądało w przypadku funkcji strzałkowych?
+We wpisie „[Tworzenie obiektów w JavaScript](/tworzenie-obiektow-javascript)” pisałem o funkcji wewnątrz obiektu (krócej: o metodzie). Do opisania siebie za pomocą obiektu użyłem operatora `this`, który powinien odwołać się do obiektu i wskazanych wartości. Odwołał się, dane zostały poprawnie podstawione, wszystko działa. A jak będzie to wyglądało w przypadku funkcji strzałkowych?
 
 Metoda `about` zapisana za pomocą zwykłej funkcji:
 
@@ -127,4 +127,4 @@ Gdyby stworzyć zmienne globalne `name` oraz `age`, funkcja strzałkowa pobrała
 
 ## Podsumowanie
 
-Funkcje strzałkowe to całkiem ciekawy temat, choć na pierwszy rzut oka nie taki prosty. Na pewno pojawią się jeszcze wpisy na ten temat. Tradycyjnie zapraszam do obserwowania [fanpage bloga](https://www.facebook.com/endfrontpl/).
+Funkcje strzałkowe to całkiem ciekawy temat, choć na pierwszy rzut oka nie taki prosty. Na pewno pojawią się jeszcze wpisy na ten temat. Tradycyjnie zapraszam do obserwowania [fanpage bloga](https://www.facebook.com/frontboardpl/).

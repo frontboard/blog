@@ -14,34 +14,32 @@ Pod koniec sierpnia podjąłem decyzję, że fajnie byłoby w końcu usiąść i
 
 ## Lista wpisów napisanych w trakcie trwania projektu
 
-Tak jak zdążyłem wspomnieć, na blogu pojawiło się równo 8 wpisów związanych bezpośrednio z moim projektem. Nie liczę [wstępu](/2017/08/29/czy-to-kolejny-nudny-blog-pewnie-tak/).
+Tak jak zdążyłem wspomnieć, na blogu pojawiło się równo 8 wpisów związanych bezpośrednio z moim projektem. Nie liczę [wstępu](/czy-to-kolejny-nudny-blog-pewnie-tak).
 
-  1. [Konstrukcja zmiennej, debugowanie kodu, operacje na zmiennych](/2017/09/01/konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych/)
-  2. [Zakres zmiennych, czyli zmienne lokalne i globalne oraz hoisting](/2017/09/03/zakres-zmiennych-czyli-zmienne-lokalne-globalne/)
-  3. [Instrukcje warunkowe – jak z nich korzystać?](/2017/09/05/instrukcje-warunkowe-jak-z-nich-korzystac/)
-  4. [Poznajemy pętle (while, for, do… while)](/2017/09/08/poznajemy-petle-while-for-dowhile/)
-  5. [Funkcje w JavaScript. Proste, a bardzo przydatne!](/2017/09/15/funkcje-od-podstaw-javascript/)
-  6. [Tablice w JavaScript](/2017/09/23/tablice-javascript/)
-  7. [Struktura DOM, pobieranie elementów z kodu HTML](/2017/10/07/dom-obiektowy-model-dokumentu/)
-  8.  [Tworzenie obiektów w JavaScript](/2017/10/14/tworzenie-obiektow-w-javascript/)
+  1. [Konstrukcja zmiennej, debugowanie kodu, operacje na zmiennych](/konstrukcja-zmiennej-debugowanie-kodu-javascript)
+  2. [Zakres zmiennych, czyli zmienne lokalne i globalne oraz hoisting](/zakres-zmiennych-zmienne-lokalne-globalne-javascript)
+  3. [Instrukcje warunkowe – jak z nich korzystać?](/instrukcje-warunkowe-if-switch-javascript)
+  4. [Poznajemy pętle (while, for, do… while)](/poznajemy-petle-while-for-dowhile-javascript)
+  5. [Funkcje w JavaScript. Proste, a bardzo przydatne!](/funkcje-od-podstaw-javascript)
+  6. [Tablice w JavaScript](/tablice-javascript)
+  7. [Struktura DOM, pobieranie elementów z kodu HTML](/dom-obiektowy-model-dokumentu-javascript-html)
+  8. [Tworzenie obiektów w JavaScript](/tworzenie-obiektow-javascript)
 
 ## Trochę statystyk
 
 Najpoczytniejsze wpisy:
 
-  1. [Konstrukcja zmiennej, debugowanie kodu, operacje na zmiennych](/2017/09/01/konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych/) **[1967 odsłon]**
-  2. [Czy to kolejny nudny blog? Pewnie tak.](/2017/08/29/czy-to-kolejny-nudny-blog-pewnie-tak/) **[1423 odsłony]**
-  3. [Struktura DOM, pobieranie elementów z kodu HTML](/2017/10/07/dom-obiektowy-model-dokumentu/) **[1208 odsłon]**
-  4. [Zakres zmiennych, czyli zmienne lokalne i globalne oraz hoisting](/2017/09/03/zakres-zmiennych-czyli-zmienne-lokalne-globalne/) **[1093 odsłony]**
-  5. [Funkcje w JavaScript. Proste, a bardzo przydatne!](/2017/09/15/funkcje-od-podstaw-javascript/) **[1004 odsłony]**
+  1. [Konstrukcja zmiennej, debugowanie kodu, operacje na zmiennych](/konstrukcja-zmiennej-debugowanie-kodu-javascript) **[1967 odsłon]**
+  2. [Czy to kolejny nudny blog? Pewnie tak.](/czy-to-kolejny-nudny-blog-pewnie-tak) **[1423 odsłony]**
+  3. [Struktura DOM, pobieranie elementów z kodu HTML](/dom-obiektowy-model-dokumentu-javascript-html) **[1208 odsłon]**
+  4. [Zakres zmiennych, czyli zmienne lokalne i globalne oraz hoisting](/zakres-zmiennych-zmienne-lokalne-globalne-javascript) **[1093 odsłony]**
+  5. [Funkcje w JavaScript. Proste, a bardzo przydatne!](/funkcje-od-podstaw-javascript) **[1004 odsłony]**
 
 
 ![Wykres odwiedzin bloga](/assets/img/statystyki-jsw60dni-google-analytics.png)
 *Statystyki bloga*
 
 Według Google Analytics w ciągu 2 miesięcy blog został odwiedzony prawie **16 tys. razy** przez ponad **13.5 tys.** unikalnych użytkowników.
-
-Na [Facebooku JS w 60 dni](https://www.facebook.com/endfrontpl/) w ciągu 2 miesięcy zebrało się ponad **1000 fanów**, a najlepiej przyjął się [post z okazji święta programisty](https://www.facebook.com/endfrontpl/photos/a.1325615594215537.1073741828.1320578841385879/1343491502427946/?type=3)!
 
 Od utworzenia bloga powstało **11 wpisów** i zebrało się ponad **50 komentarzy** (dokładnie 52), co daje średnią prawie **5 komentarzy przypadających na 1 wpis**!
 

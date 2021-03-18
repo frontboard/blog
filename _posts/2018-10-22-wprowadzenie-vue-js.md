@@ -94,4 +94,4 @@ W dużym skrócie, **Vue.js**:
 
 Chyba warto?
 
-Powstał kolejny post dotyczący [dyrektyw warunkowych w Vue.js](/dyrektywy-warunkowe-vue-js/) - rzuć okiem, jeśli temat Vue jest dla Ciebie nowością.
+Powstał kolejny post dotyczący [dyrektyw warunkowych w Vue.js](/dyrektywy-warunkowe-vue-js) - rzuć okiem, jeśli temat Vue jest dla Ciebie nowością.

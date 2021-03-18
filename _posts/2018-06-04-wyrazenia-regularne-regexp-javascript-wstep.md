@@ -91,6 +91,6 @@ else alert('Ciąg znaków nie pasuje do wyrażenia regularnego');
 
 ## Testowanie wyrażeń regularnych
 
-W przypadku, gdy chcemy mieć większe narzędzie do testowania wyrażeń regularnych, z pomocą przychodzi strona [Regex101.com](https://regex101.com). W panelu bocznym możemy skonfigurować aplikację pod siebie i chociażby zmienić motyw na ciemny – opcji jest na prawdę mnóstwo, zachęcam do sprawdzenia!
+W przypadku, gdy chcemy mieć większe narzędzie do testowania wyrażeń regularnych, z pomocą przychodzi [strona Regex101](https://regex101.com). W panelu bocznym możemy skonfigurować aplikację pod siebie i chociażby zmienić motyw na ciemny – opcji jest na prawdę mnóstwo, zachęcam do sprawdzenia!
 
-Mam nadzieję, że tym tekstem przybliżyłem Ci choć trochę temat wyrażeń regularnych w  JavaScript. Przyznam, że mnie RegExp wciągnął i podłubię sobie przy nim jeszcze trochę, co z pewnością przełoży się na kilka dodatkowych wpisów. Zachęcam do komentowania posta, w przypadku jakichkolwiek wątpliwości postaram się pomóc!
+Mam nadzieję, że tym tekstem przybliżyłem Ci choć trochę temat wyrażeń regularnych w JavaScript. Przyznam, że mnie RegExp wciągnął i podłubię sobie przy nim jeszcze trochę, co z pewnością przełoży się na kilka dodatkowych wpisów. Zachęcam do komentowania posta, w przypadku jakichkolwiek wątpliwości postaram się pomóc!

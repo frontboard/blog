@@ -88,4 +88,4 @@ W zdecydowanej większości błędów właśnie tam znajdziesz rozwiązanie. No,
 
 ## Podsumowanie
 
-Tym wpisem pokazałem Wam **jak tworzyć zmienne** i **operować na nich**, **jak debugować kod**, czyli **gdzie szukać błędów**. Następny wpis już za kilka dni ([przenieś mnie](/zakres-zmiennych-czyli-zmienne-lokalne-globalne/)). Być może (w sumie na pewno) gdzieś będą przewijały się błędy. Jeżeli ktoś bardziej obeznany z JS-em widzi jakiś - koniecznie daj znać w komentarzu co zapisałem nie tak, poprawię go. Dzięki!
+Tym wpisem pokazałem Wam **jak tworzyć zmienne** i **operować na nich**, **jak debugować kod**, czyli **gdzie szukać błędów**. Następny wpis już za kilka dni ([przenieś mnie](/zakres-zmiennych-zmienne-lokalne-globalne-javascript)). Być może (w sumie na pewno) gdzieś będą przewijały się błędy. Jeżeli ktoś bardziej obeznany z JS-em widzi jakiś - koniecznie daj znać w komentarzu co zapisałem nie tak, poprawię go. Dzięki!

@@ -33,7 +33,7 @@ Rolę zmiennej *inline* pełni tutaj `let ilosc = 1`, warunek to `ilosc<6`, a op
 ![Konsola JSBin.com](/assets/img/efekt-petli-for.png)
 *Efekt widoczny w przeglądarce po wykonaniu pętli for*
 
-Zmienna na początku przyjęła wartość 1, bo indeksowanie w JavaScript zaczyna się od 0. Tak więc moglibyśmy ustawić zmienną *ilosc* na 0, ale wtedy numeracja zdań nie byłaby taka, jaką chciałem osiągnąć. Więcej o tym w [pierwszym poście](https://www.endfront.pl/konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych/) o zmiennych.
+Zmienna na początku przyjęła wartość 1, bo indeksowanie w JavaScript zaczyna się od 0. Tak więc moglibyśmy ustawić zmienną *ilosc* na 0, ale wtedy numeracja zdań nie byłaby taka, jaką chciałem osiągnąć. Więcej o tym w [pierwszym poście](/konstrukcja-zmiennej-debugowanie-kodu-javascript) o zmiennych.
 
 ## Pętla while
 
@@ -64,4 +64,4 @@ do { // "wykonaj"
 
 ## Podsumowanie #004
 
-Sprawa dosyć prosta i bardzo często wykorzystywana w programowaniu. Na pewno nie raz (i nie dwa) będziecie się z nimi spotykać na swojej drodze podczas tworzenia jakichkolwiek projektów. Gdybyście mieli jakiekolwiek pytania - zapraszam do komentowania, postaram się rozwiać wszystkie Wasze wątpliwości. Tymczasem… dziękuję za uwagę i zapraszam do polajkowania [fanpage endfront.pl](https://www.facebook.com/endfrontpl/).
+Sprawa dosyć prosta i bardzo często wykorzystywana w programowaniu. Na pewno nie raz (i nie dwa) będziecie się z nimi spotykać na swojej drodze podczas tworzenia jakichkolwiek projektów. Gdybyście mieli jakiekolwiek pytania - zapraszam do komentowania, postaram się rozwiać wszystkie Wasze wątpliwości. Tymczasem… dziękuję za uwagę i zapraszam do polajkowania [fanpage Frontboard.pl](https://www.facebook.com/frontboardpl/).

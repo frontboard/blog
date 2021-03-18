@@ -6,7 +6,7 @@ layout: post
 categories: javascript vue
 img: /assets/img/vue02.png
 ---
-Dyrektywy warunkowe w Vue.js nieco przypominają czysto [JS-owe instrukcje warunkowe](/instrukcje-warunkowe-jak-z-nich-korzystac/). Zastosowania są podobne, ale zapis jest nieco inny. Nie da się ukryć, że nie są zbyt skomplikowane, ale mogą okazać się bardzo przydatne (a wręcz niezbędne!).
+Dyrektywy warunkowe w Vue.js nieco przypominają czysto [JS-owe instrukcje warunkowe](/instrukcje-warunkowe-if-switch-javascript). Zastosowania są podobne, ale zapis jest nieco inny. Nie da się ukryć, że nie są zbyt skomplikowane, ale mogą okazać się bardzo przydatne (a wręcz niezbędne!).
 
 ## Dyrektywy warunkowe
 Dyrektywy warunkowe przyjmują jako swój parametr na przykład wartość obiektu `data` (dla przypomnienia – tam znajdują się wszelkie dane) lub wyrażenie i zwracają wartość logiczną. Jest to coś, co każdy programista uczący się Vue.js powinien znać. Do naszej dyspozycji mamy 3 dyrektywy: `v-if`, `v-else` i `v-show`. 

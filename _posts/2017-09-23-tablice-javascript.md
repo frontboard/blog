@@ -82,7 +82,7 @@ Jeszcze tylko test i… wszystko działa!
 ![Kod i konsola JSBin.com](/assets/img/dopchniecie-danych-do-tablicy.png)
 *Efekt dopchnięcia danych do tablicy*
 
-Jeżeli chcesz dodać dane na początku tablicy - skorzystaj z metody [`unshift`](https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Obiekty/Array/unshift). Użycie [`push`](https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Obiekty/Array/push) spowoduje, że dane pojawią się na końcu tablicy.
+Jeżeli chcesz dodać dane na początku tablicy - skorzystaj z [metody `unshift`](https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Obiekty/Array/unshift). Użycie [`push`](https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Obiekty/Array/push) spowoduje, że dane pojawią się na końcu tablicy.
 
 ## Usuwanie danych
 
@@ -116,4 +116,4 @@ document.write("Liczba klientów to " + klienci.length);
 
 ## Podsumowanie #006
 
-Do ukończenia tego wpisu zabierałem się ponad 2 tygodnie (początkowo miał pojawić się 5 września) :) Myślę, że nieco przybliżyłem Wam temat przechowywania większej ilości danych za pomocą tablic w JavaScript. Gdybyś miał jakieś pytania, opinię - zapraszam do komentowania, pisania na Facebooku ([kliknij tutaj](https://www.facebook.com/endfrontpl/)), pisania maili.
+Do ukończenia tego wpisu zabierałem się ponad 2 tygodnie (początkowo miał pojawić się 5 września) :) Myślę, że nieco przybliżyłem Wam temat przechowywania większej ilości danych za pomocą tablic w JavaScript. Gdybyś miał jakieś pytania, opinię - zapraszam do komentowania, pisania na Facebooku ([kliknij tutaj](https://www.facebook.com/frontboardpl/)) czy pisania maili.

@@ -80,4 +80,4 @@ function switchTheme () {
 
 ## Podsumowanie
 
-Bardzo niskim nakładem pracy osiągnęliśmy ciekawą i stosowaną na wielu stronach funkcję. Myślę, że duża część użytkowników odwiedzających witrynę w nocy będzie Wam wdzięcznych. Dla chętnych podrzucam [demo do poklikania](https://kstawinski.github.io/theme-switcher/), a także [kod na GitHubie](https://github.com/kstawinski/theme-switcher).
+Bardzo niskim nakładem pracy osiągnęliśmy ciekawą i stosowaną na wielu stronach funkcję. Myślę, że duża część użytkowników odwiedzających witrynę w nocy będzie Wam wdzięcznych.

@@ -12,7 +12,7 @@ Stylowanie elementów z kodu HTML za pomocą JavaScriptu? Jak najbardziej! Czę�
 
 ## Struktura DOM
 
-Model DOM czyli **document object model**. Musicie zrozumieć **strukturę DOM**, aby w późniejszym etapie móc pobierać właściwe elementy. Poniżej przedstawiam obrazek, który obrazuje jak taki model działa. [Jakub Jurkian](https://jakubjurkian.pl) w swoim kursie porównał go do drzewa - to bardzo dobry przykład.
+Model DOM czyli **document object model**. Musicie zrozumieć **strukturę DOM**, aby w późniejszym etapie móc pobierać właściwe elementy. Poniżej przedstawiam obrazek, który obrazuje jak taki model działa.
 
 ![Schemat DOM](/assets/img/obiektowy-model-dokumentu.png)
 *Obiektowy model dokumentu*
