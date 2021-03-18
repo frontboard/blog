@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript
 img: /assets/img/jsw60dni.png
+redirect_from:
+  - /konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych
 ---
 1 września, a więc ruszamy z projektem. Kompletne podstawy podstaw, czyli **zmienne w JavaScript**. Są one obecne praktycznie w każdym innym języku programowania - w PHP, C++ itd. My jednak przyjrzymy się JS-owi.
 

@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: inne
 img: /assets/img/zegnaj-wordpress-witaj-jekyll.png
+redirect_from:
+  - /zegnaj-wordpress-witaj-jekyll
 ---
 Na blogu pojawiło się trochę zmian wizualnych, choć zdecydowanie więcej działo się "pod spodem". W telegraficznym skrócie: **uciekam od WordPressa**! Czy jestem z tego zadowolony? Jakie wady i zalety ma każdy z wymienionych systemów?
 
