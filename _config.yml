@@ -16,11 +16,12 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
-permalink: /:title/
+  - jekyll-redirect-from
+permalink: /:title
 
 # Pagination settings
 paginate: 5
-paginate_path: /strona-:num/
+paginate_path: /strona-:num
 seo_paginator_message: "Strona %<current>s | "
 
 # Disqus comments

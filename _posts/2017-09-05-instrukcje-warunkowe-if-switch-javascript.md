@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript
 img: /assets/img/jsw60dni.png
+redirect_from:
+  - /instrukcje-warunkowe-jak-z-nich-korzystac/
 ---
 Znając już kompletne podstawy JavaScript (mowa oczywiście o zmiennych, na które poświęciłem 3 wpisy) czas ruszyć dalej. Zabierzemy się za instrukcje warunkowe, znane również jako ify. Polegają one na wykonaniu X (if), jeżeli Y (warunek) się zgadza. Jeżeli nie, kod być może wykonuje czynność Z (else).
 
