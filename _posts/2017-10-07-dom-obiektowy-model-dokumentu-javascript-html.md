@@ -7,6 +7,7 @@ categories: javascript
 img: /assets/img/jsw60dni.png
 redirect_from:
   - /dom-obiektowy-model-dokumentu
+  - /dom-obiektowy-model-dokumentu/
 ---
 Stylowanie elementów z kodu HTML za pomocą JavaScriptu? Jak najbardziej! Część z Was być może zapyta: po co? Chociażby po to, aby po kliknięciu w przycisk zmienił on swoją właściwość, dajmy na to `background-color`. To tylko jedno z wielu zastosowań takiego rozwiązania. My dzisiaj zajmiemy się nauką pobierania elementów z kodu HTML. Zapraszam do uważnej lektury, bo to jeden z przydatniejszych tematów!
 

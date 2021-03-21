@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: inne
 img: /assets/img/jsw60dni.png
+redirect_from:
+  - /czy-to-kolejny-nudny-blog-pewnie-tak/
 ---
 Zostać front-endowcem bez znajomości nawet podstaw JavaScriptu? Niemożliwe, dlatego od początku września do końca października będę tworzył tego bloga. Mój cel to opanowanie JavaScriptu w ciągu 60 dni.
 

@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: dev
 img: /assets/img/theme-switcher.png
+redirect_from:
+  - /dynamiczna-zmiana-kolorow-strony/
 ---
 Wielokrotnie na grupach związanych z językami HTML czy CSS napotykałem pytania dotyczące tzw. *theme switchera*. Jego zadanie to — zależnie od ustawienia użytkownika — serwowanie mu odpowiedniej wersji kolorystycznej strony. Rozwiązanie jest wbrew pozorom bardzo proste.
 

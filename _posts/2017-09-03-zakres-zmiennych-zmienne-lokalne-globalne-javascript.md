@@ -7,6 +7,7 @@ categories: javascript
 img: /assets/img/jsw60dni.png
 redirect_from:
   - /zakres-zmiennych-czyli-zmienne-lokalne-globalne
+  - /zakres-zmiennych-czyli-zmienne-lokalne-globalne/
 ---
 Na pewno wiesz już jak korzystać ze zmiennych w JavaScript. Jeżeli nie, odsyłam Cię do [pierwszego wpisu](/konstrukcja-zmiennej-debugowanie-kodu-javascript). Tym postem nieco przybliżę Ci temat zmiennych lokalnych i globalnych, czyli inaczej zmiennych o zasięgu lokalnym/globalnym oraz wyjaśnię, dlaczego nie warto pomijać słówka `var` przy ich deklarowaniu. Let's go!
 

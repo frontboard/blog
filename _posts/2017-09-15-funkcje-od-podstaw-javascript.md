@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript
 img: /assets/img/jsw60dni.png
+redirect_from:
+  - /funkcje-od-podstaw-javascript/
 ---
 Podobnie jak zmienne, funkcje są jednymi z częściej wykorzystywanych elementów w danym języku programowania. Nic w tym dziwnego, skoro pozwalają one znacznie zmniejszyć objętość kodu. Kolejnym plusem jest ich "elastyczność". Do stworzonej już funkcji możemy podstawiać różne dane, bez ingerencji w samą logikę. Fajna sprawa, a zarazem bardzo prosta.
 

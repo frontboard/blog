@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript
 img: /assets/img/regexp.jpg
+redirect_from:
+  - /wyrazenia-regularne-regexp-javascript-wstep/
 ---
 Wyrażenia regularne są bardzo przydatne podczas programowania. Dzięki nim możemy sprawdzić, czy porównywany ciąg znaków pasuje do stworzonego wcześniej wzorca RegExp. Na przykład, czy wartość wprowadzona do pola tekstowego jest zgodna ze wzorem adresu mailowego (*login@domena.pl*).
 

@@ -7,6 +7,7 @@ categories: javascript
 img: /assets/img/jsw60dni.png
 redirect_from:
   - /tworzenie-obiektow-w-javascript
+  - /tworzenie-obiektow-w-javascript/
 ---
 Obiekt to taka jedna zmienna, która pozwala na przypisanie jej większej ilości danych nie tworząc przy tym kolejnych zmiennych. Przedstawię Ci kilka podstawowych operacji na obiektach, tworzenie pustego obiektu i późniejsze uzupełnianie go danymi. Gwarantuję, że szybko załapiesz o co z obiektami w JavaScript chodzi!
 

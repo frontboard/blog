@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript vue
 img: /assets/img/vue02.png
+redirect_from:
+  - /dyrektywy-warunkowe-vue-js/
 ---
 Dyrektywy warunkowe w Vue.js nieco przypominają czysto [JS-owe instrukcje warunkowe](/instrukcje-warunkowe-if-switch-javascript). Zastosowania są podobne, ale zapis jest nieco inny. Nie da się ukryć, że nie są zbyt skomplikowane, ale mogą okazać się bardzo przydatne (a wręcz niezbędne!).
 

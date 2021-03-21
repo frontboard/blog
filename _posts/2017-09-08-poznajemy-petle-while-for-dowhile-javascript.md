@@ -7,6 +7,7 @@ categories: javascript
 img: /assets/img/jsw60dni.png
 redirect_from:
   - /poznajemy-petle-while-for-dowhile
+  - /poznajemy-petle-while-for-dowhile/
 ---
 Pętle wykorzystywane są chyba w każdym języku programowania. Zazwyczaj używa się ich, by skrócić kod (a co za tym idzie - uporządkować) i powtarzać wybraną czynność ileś razy. Nie ma co przedłużać, bo **pętle to dosyć prosty temat**, tak więc zabierajmy się za praktykę.
 

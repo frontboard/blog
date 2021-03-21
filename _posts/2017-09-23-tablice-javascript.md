@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript
 img: /assets/img/jsw60dni.png
+redirect_from:
+  - /tablice-javascript/
 ---
 Zmienne kompletnie nie nadają się do przechowywania większej ilości danych. Chyba nie chcesz tworzyć 100 zmiennych tylko po to, aby zapisać w nich imię i nazwisko swojego klienta? Lepiej byłoby stworzyć jedną tablicę o nazwie `klienci` i w niej trzymać dane, bo kod siłą rzeczy nie będzie tylko krótszy, ale i wydajniejszy.
 

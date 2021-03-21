@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript vue
 img: /assets/img/vue01.png
+redirect_from:
+  - /wprowadzenie-vue-js/
 ---
 Serię wpisów dotyczącą Vue.js zacznijmy od krótkiego wprowadzenia. Po przeczytaniu wpisu dowiesz się, jak podpiąć Vue.js i — coś, czego nie mogło zabraknąć — stworzymy "hello world'a". Do dzieła!
 

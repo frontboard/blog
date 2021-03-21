@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript
 img: /assets/img/funkcje-strzalkowe.jpg
+redirect_from:
+  - /funkcje-strzalkowe-es6-javascript/
 ---
 *Fat arrow functions*, czyli grube funkcje strzałkowe to w dużym uproszczeniu skrócone wersje wyrażeń funkcyjnych przypisanych do zmiennych. Funkcje strzałkowe – jak dla mnie – oferują zdecydowanie przystępniejszą składnię. Istnieje jednak mała pułapka, na którą trzeba uważać – mowa o zakresie `this`.
 

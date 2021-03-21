@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: inne
 img: /assets/img/jsw60dni-podsumowanie.png
+redirect_from:
+  - /podsumowanie-projektu-javascript-60-dni/
 ---
 Tworząc projekt JavaScript w 60 dni, nie spodziewałem się tak dużego zainteresowania. W ciągu kilku pierwszych dni na Facebooku pojawiło się około 400 fanów, ale o tym zaraz.
 

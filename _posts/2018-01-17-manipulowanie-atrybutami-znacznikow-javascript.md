@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript
 img: /assets/img/atrybuty-javascript.png
+redirect_from:
+  - /manipulowanie-atrybutami-znacznikow-javascript/
 ---
 JavaScript jest dla mnie niezwykle ciekawym językiem, który mimo swoich wad pozwala mi czerpać wiele radości. Chciałbym pokazać Wam, jak za pomocą czystego JS-a możemy manipulować atrybutami tagów HTML. Będą style inline, klasy, nowe atrybuty i to, co lubię najbardziej - praktyka!
 

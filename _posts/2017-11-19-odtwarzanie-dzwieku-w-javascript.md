@@ -5,6 +5,8 @@ author: Kacper Stawiński
 layout: post
 categories: javascript
 img: /assets/img/odtwarzanie-dzwieku-javascript.jpg
+redirect_from:
+  - /odtwarzanie-dzwieku-w-javascript/
 ---
 Zastanawiasz się, jak za pomocą JavaScript odtwarzać dźwięk na przykład jako powiadomienie dźwiękowe? Ten artykuł z pewnością rozwieje Twoje wątpliwości.
 
