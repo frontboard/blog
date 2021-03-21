@@ -23,7 +23,7 @@ Po uruchomieniu kodu i spojrzeniu do konsoli, za każdym razem powinien pokazać
 
 ## Gdzie szukać ogólnodostępnych API?
 
-Jeśli zastanawiasz się, skąd możesz wziąć jakieś publiczne API, koniecznie rzuć okiem do [repozytorium public-apis/public-apis](https://github.com/public-apis/public-apis). Znajdziesz tam mnóstwo kategorii, szczegółowe dane nt. poszczególnych API, takie jak opis, wymaganie autoryzacji, bezpiecznego połączenia czy obsługa [`CORS`](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). Poza tym, rzuć okiem np. na [public-apis.xyz](https://public-apis.xyz/), [public-apis.io](https://public-apis.io/) czy [apilist.fun](https://apilist.fun/).
+Jeśli zastanawiasz się, skąd możesz wziąć jakieś publiczne API, koniecznie rzuć okiem na [repozytorium public-apis/public-apis](https://github.com/public-apis/public-apis). Znajdziesz tam mnóstwo kategorii, szczegółowe dane nt. poszczególnych API, takie jak opis, wymaganie autoryzacji, bezpiecznego połączenia czy obsługa [`CORS`](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). Poza tym, sprawdź też np. [public-apis.xyz](https://public-apis.xyz/), [public-apis.io](https://public-apis.io/) czy [apilist.fun](https://apilist.fun/).
 
-Kiedyś w ramach nauki [frameworka Svelte](https://svelte.dev/) stworzyłem mini-projekt do wyświetlania losowo wybranego API. Nic skomplikowanego, wymaga kilku poprawek, ale jeśli chcesz to skorzystaj: [random-api.netlify.app](https://random-api.netlify.app/).
+Swoją drogą, kiedyś w ramach nauki [frameworka Svelte](https://svelte.dev/) stworzyłem mini-projekt do wyświetlania losowo wybranego API. Nic skomplikowanego, wymaga kilku poprawek, ale jeśli chcesz to skorzystaj: [random-api.netlify.app](https://random-api.netlify.app/).
 
