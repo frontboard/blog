@@ -1,3 +1,8 @@
+---
+layout: page
+title: O mnie
+permalink: /o-mnie
+---
 ## Cześć! 🤝
 Miło mi, że zdecydowałeś się odwiedzić tę stronę - to chyba znaczy, że chcesz dowiedzieć się czegoś więcej na temat autora tych wszystkich tekstów. Mam na imię Kacper, prowadzę tego bloga i programuję w JavaScript. W przyszłości chciałbym zostać etatowym programistą, do czego powoli dążę. We wrześniu 2017 r. rozpocząłem [projekt JavaScript w 60 dni](/podsumowanie-projektu-javascript-60-dni). Zerknij do podsumowania, jeśli chcesz przejrzeć posty, które powstały w czasie jego trwania. Przy okazji założyłem też grupę na Facebooku (obecnie jedną z większych) poświęconą tematyce JS-a: [JavaScript Polska](https://www.facebook.com/groups/jspolska/). Poza tym, w trakcie trwania sezonu jeżdzę na motocyklu.
 
