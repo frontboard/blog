@@ -71,8 +71,8 @@ Chcąc, aby nasza funkcja strzałkowa robiła cokolwiek więcej, niż tylko zwra
 
 ```js
 const diff = (a, b) => {
-	console.log(`Mathematical operation: ${a} - ${b}`);
-	return a - b;
+  console.log(`Mathematical operation: ${a} - ${b}`);
+  return a - b;
 }
 
 console.log(diff(10, 5)); // => 5
@@ -85,13 +85,13 @@ Warto pamiętać, że w przypadku zastosowania bloku instrukcji, musimy sami sko
 // Niepoprawnie
 const hi = (name) => { `Hi ${name}` };
 const hi = (name) => {
-    `Hi ${name}`
+  `Hi ${name}`
 };
 
 // Teoretycznie OK, ale to bez sensu
 const hi = (name) => { return `Hi ${name}` };
 const hi = (name) => {
-    return `Hi ${name}`;
+  return `Hi ${name}`;
 };
 
 // Najlepsze rozwiązanie
