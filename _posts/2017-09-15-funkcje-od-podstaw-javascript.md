@@ -1,5 +1,5 @@
 ---
-title: Funkcje w JavaScript. Proste, a bardzo przydatne!
+title: Funkcje w JavaScript od podstaw
 date: 2017-09-15T16:07:54+00:00
 author: Kacper Stawiński
 layout: post
