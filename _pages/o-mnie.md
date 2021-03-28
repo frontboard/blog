@@ -1,5 +1,6 @@
 ---
 layout: page
+image: /assets/ja-1.jpg
 title: O mnie
 permalink: /o-mnie
 ---
