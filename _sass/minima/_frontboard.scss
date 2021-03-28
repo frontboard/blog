@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+// Variables
+$color-brand: #6616dd;
+$color-text: #27292f;
+$color-description: red;
+$color-disabled: #6e6f71;
+
+body {
+  color: $color-text;
+}
+
 // Helpers
 .flex {
   display: flex;
@@ -6,10 +18,13 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__center {
+    align-items: center;
+  }
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -50,12 +65,22 @@
 // Header
 .header {
   padding: 30px 0;
-  z-index: 1;
-  position: relative;
-  box-shadow: 0 3px 3px -3px rgba(#000, 0.1);
+  background: #fff;
+  transition: 0.3s all;
 
+  &__isSticky {
+    box-shadow: 0 3px 3px -3px rgba(#000, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
   &__title {
     margin: 0;
+  }
+  &__logo {
+    max-width: 160px;
+    margin-right: 40px;
   }
 }
 
@@ -64,16 +89,17 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 5px;
     }
   }
   &__link {
     padding: 10px;
-    color: $color-description;
+    color: $color-text;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
+      color: $color-brand;
     }
   }
 }
@@ -210,5 +236,76 @@
   }
   &__title {
     margin: 10px 0 15px 0;
+  }
+}
+
+// Article
+.article {
+  width: 80%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    line-height: 1.5;
+    color: $color-text;
+
+    p {
+      margin-top: 20px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 20px;
+    }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.4em; }
+    h4 { font-size: 1.2em; }
+    pre {
+      font-size: 15px;
+      padding: 8px 12px;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+    pre, code {
+      font-family: monospace;
+    }
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-brand;
+      }
+    }
+  }
+  &__sidebar {
+    width: 18%;
+    margin-top: 190px;
+  }
+  &__header {
+    margin: 50px 0 40px 0;
+  }
+  &__title {
+    font-weight: 500;
+    margin: 15px 0 25px 0;
+    font-size: 2.5em;
+  }
+  &__authorImage {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  &__authorLink {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-brand;
+    }
+  }
+  &__meta {
+    color: $color-disabled;
   }
 }

@@ -1,19 +1,26 @@
 <header class="header" role="banner">
 
   <div class="container flex flex__spaced">
-    <h1 class="header__title">
-      <a class="header__link" rel="author" href="{{ '/' | relative_url }}">
-        {{ site.title | escape }}
-      </a>
-    </h1>
+    <div class="flex flex__center">
+      <h1 class="header__title">
+        <a class="header__link" rel="author" href="{{ '/' | relative_url }}">
+          <img src="/assets/logo.png" class="header__logo">
+        </a>
+      </h1>
 
+      <ul class="nav flex" role="navigation">
+        <li class="nav__item">
+          <a href="/o-mnie" class="nav__link">O mnie</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Zacznij tutaj</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link-featured">Dołącz do newslettera!</a>
+        </li>
+      </ul>
+    </div>
     <ul class="nav flex" role="navigation">
-      <li class="nav__item">
-        <a href="#" class="nav__link">O mnie</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Kategorie</a>
-      </li>
       <li class="nav__item">
         <a href="#" class="nav__link nav__link-featured">Dołącz do newslettera!</a>
       </li>
