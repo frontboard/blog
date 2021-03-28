@@ -1,0 +1,214 @@
+// Helpers
+.flex {
+  display: flex;
+
+  &__spaced {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.font {
+  &__mono {
+    font-family: $secondary-font-family;
+  }
+}
+
+.dots {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -40px;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.09' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    display: block;
+    width: 300px;
+    height: 120px;
+    z-index: -1;
+  }
+}
+
+// Buttons
+.button {
+  font-family: 'Rubik';
+  font-size: 14px;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  font-weight: 400;
+  border: 0;
+}
+
+// Header
+.header {
+  padding: 30px 0;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 3px 3px -3px rgba(#000, 0.1);
+
+  &__title {
+    margin: 0;
+  }
+}
+
+.nav {
+  margin: 0;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  &__link {
+    padding: 10px;
+    color: $color-description;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Categories
+.categories {
+  margin: 20px auto 30px auto;
+  padding: 20px;
+  background: white;
+
+  &__header {
+    width: 35%;
+  }
+  &__list {
+    width: 60%;
+  }
+  &__title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  &__p {
+    line-height: 1.3;
+    font-size: 14px;
+  }
+  &__item {
+    width: 32%;
+    background: black;
+    color: #fff;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+// Home
+.home {
+  margin-top: 50px;
+}
+
+// Featured post
+.featured {
+  margin: 70px auto 120px auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 260px;
+    left: calc(40% - 250px);
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.09'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: block;
+    width: 500px;
+    height: 120px;
+    z-index: -1;
+  }
+  &__detail {
+    &:not(:last-child) {
+      // margin-right: 10px;
+
+      &::after {
+        content: '/';
+        padding: 0 10px;
+      }
+    }
+  }
+  &__content {
+    margin: 15px 0;
+  }
+  &__p {
+    // width: 50%;
+  }
+  &__image {
+    max-height: 350px;
+  }
+  &__info {
+    padding: 40px;
+    background: white;
+    margin-left: -20px;
+  }
+}
+
+// Post (in home view)
+.home__posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 32px;
+  grid-auto-flow: dense;
+  margin-bottom: 30px;
+}
+.post {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: -30px;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    display: block;
+    width: 300px;
+    height: 120px;
+    z-index: -1;
+  }
+  &__imageContainer {
+    width: 80%;
+    overflow: hidden;
+  }
+  &__image {
+    transition: transform 1s ease;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__details {
+    background: #fff;
+    margin-top: -80px;
+    margin-left: 30px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    margin: 10px 0 15px 0;
+  }
+}
