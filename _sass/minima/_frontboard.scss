@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 // Variables
-$color-brand: #6616dd;
+$color-brand: #264DE4;
 $color-text: #27292f;
 $color-description: red;
 $color-disabled: #6e6f71;
@@ -100,6 +100,12 @@ body {
     &:hover {
       text-decoration: underline;
       color: $color-brand;
+    }
+    &-featured {
+      background: rgba($color-brand, 0.08);
+      color: $color-brand;
+      border-radius: 50px;
+      padding: 8px 23px;
     }
   }
 }
@@ -297,15 +303,39 @@ body {
     margin-right: 12px;
   }
   &__authorLink {
-    color: inherit;
-    text-decoration: underline;
+    color: $color-disabled;
+    text-decoration: none;
 
     &:hover {
-      text-decoration: none;
-      color: $color-brand;
+      text-decoration: underline;
+      color: $color-text;
     }
   }
   &__meta {
+    color: $color-disabled;
+  }
+}
+
+// Footer
+.footer {
+  background: #f8f8fc;
+  margin-top: 50px;
+  padding: 30px 0;
+
+  &__item {
+    margin-right: 10px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $color-text;
+    color: $color-text;
+  }
+  &__p {
+    margin-top: 10px;
+    font-size: 14px;
+    width: 40%;
+    line-height: 1.3;
     color: $color-disabled;
   }
 }
