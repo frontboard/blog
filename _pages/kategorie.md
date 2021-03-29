@@ -12,7 +12,7 @@ permalink: /kategorie
 
 	<ol class="category-list">
 	  {% for post in sorted_posts %}
-	    <li class="category-list-item"><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{ post.title }}</a></li>
+	    <li class="category-list-item"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ol>
 </div>
