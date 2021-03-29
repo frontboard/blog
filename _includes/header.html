@@ -1,5 +1,7 @@
-<header class="header" role="banner">
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths | reverse -%}
 
+<header class="header" role="banner">
   <div class="container flex flex__spaced">
     <div class="flex flex__center">
       <h1 class="header__title">
@@ -9,15 +11,14 @@
       </h1>
 
       <ul class="nav flex" role="navigation">
-        <li class="nav__item">
-          <a href="/o-mnie" class="nav__link">O mnie</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Tagi</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Kontakt</a>
-        </li>
+        {%- for path in page_paths -%}
+          {%- assign page = site.pages | where: "path", path | first -%}
+          {%- if page.title -%}
+          <li class="nav__item">
+            <a href="{{ page.url | relative_url }}" class="nav__link">{{ page.title | escape }}</a>
+          </li>
+          {%- endif -%}
+        {%- endfor -%}
       </ul>
     </div>
     <div class="flex flex__center">
