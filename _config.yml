@@ -31,3 +31,11 @@ seo_paginator_message: "Strona %<current>s | "
 # Disqus comments
 disqus:
   shortname: jsw60dni
+
+# Categories
+categories_names:
+  'javascript': 'JavaScript'
+  'vue': 'Vue.js'
+  'inne': 'Po godzinach'
+  'html': 'HTML'
+  'css': 'CSS'
