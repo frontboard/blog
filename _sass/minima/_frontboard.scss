@@ -8,6 +8,7 @@ $color-disabled: #6e6f71;
 
 body {
   color: $color-text;
+  overflow-x: hidden;
 }
 
 // Helpers
@@ -258,7 +259,15 @@ body {
     color: $color-text;
 
     p {
-      margin-top: 20px;
+      margin: 15px 0;
+    }
+    figure {
+      margin: 30px 0;
+    }
+    figcaption {
+      text-align: center;
+      color: $color-disabled;
+      margin-top: 10px;
     }
     h1, h2, h3, h4, h5, h6 {
       margin-top: 20px;
@@ -283,12 +292,47 @@ body {
         color: $color-brand;
       }
     }
-    // ol, ul {
-    //   list-style: unset;
-    // }
-    li::before {
-      content: ' • ';
-      margin-right: 5px;
+    ol, ul {
+      list-style: inside;
+      list-style-type: revert;
+      margin-left: 10px;
+    }
+    strong { font-weight: 500; }
+    em { font-style: italic; }
+    img { max-width: 100%; }
+    .full-width {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+    // tu figcaption
+    table, td, th {
+      border: 1px solid black;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: none;
+    }
+    th, td {
+      padding: 7px;
+      text-align: left;
+      border: 0;
+      // border-bottom: 1px solid #ddd;
+    }
+    tr {
+      &:hover {
+        background-color: #f7f7f7;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+      }
+    }
+    th {
+      font-weight: 500;
     }
   }
   &__sidebar {
