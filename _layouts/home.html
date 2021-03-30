@@ -15,21 +15,21 @@ layout: default
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← Wstecz</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__page">←</a>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <span>{{ page }}</span>
+        <span class="pagination__page pagination__page-current">{{ page }}</span>
       {% elsif page == 1 %}
-        <a href="/">{{ page }}</a>
+        <a href="/" class="pagination__page pagination__page-link">{{ page }}</a>
       {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pagination__page pagination__page-link">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Dalej →</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__page">→</a>
     {% endif %}
   </div>
   {% endif %}
