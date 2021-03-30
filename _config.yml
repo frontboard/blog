@@ -24,7 +24,7 @@ permalink: /:title
 include: ['_pages']
 
 # Pagination settings
-paginate: 5
+paginate: 9
 paginate_path: /strona-:num
 seo_paginator_message: "Strona %<current>s | "
 

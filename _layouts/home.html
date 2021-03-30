@@ -1,19 +1,36 @@
 ---
 layout: default
 ---
-{% include categories.html %}
-{% include featured_post.html %}
 
 {%- if site.posts.size > 0 -%}
   <div class="container home">
     <ul class="home__posts">
-      {%- for post in site.posts limit:6 -%}
+      {%- for post in paginator.posts -%}
         {% include post.html post=post %}
       {%- endfor -%}
     </ul>
-
-    {%- if site.posts.size > 6 -%}
-      <button class="button button__dark">Załaduj więcej</button>
-    {%- endif -%}
   </div>
+
+  <!-- Pagination -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__page">←</a>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="pagination__page pagination__page-current">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="/" class="pagination__page pagination__page-link">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="pagination__page pagination__page-link">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__page">→</a>
+    {% endif %}
+  </div>
+  {% endif %}
 {%- endif -%}
