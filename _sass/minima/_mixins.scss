@@ -1,0 +1,76 @@
+@mixin content-formatting {
+p {
+    margin: 15px 0;
+  }
+  figure {
+    margin: 30px 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+  }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.4em; }
+  h4 { font-size: 1.2em; }
+  pre {
+    font-size: 15px;
+    padding: 8px 12px;
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+  pre, code {
+    font-family: monospace;
+  }
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-brand;
+    }
+  }
+  ol, ul {
+    list-style: inside;
+    list-style-type: revert;
+    margin-left: 10px;
+  }
+  strong { font-weight: 500; }
+  em { font-style: italic; }
+  img { max-width: 100%; }
+  .full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  figcaption {
+    text-align: center;
+    color: $color-disabled;
+    margin-top: 10px;
+  }
+  table, td, th {
+    border: 1px solid black;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+  }
+  th, td {
+    padding: 7px;
+    text-align: left;
+    border: 0;
+  }
+  tr {
+    &:hover {
+      background-color: #f7f7f7;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  th {
+    font-weight: 500;
+  }
+}
