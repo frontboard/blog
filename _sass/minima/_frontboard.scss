@@ -21,6 +21,13 @@ body {
   }
 }
 
+@include media-query($on-laptop) {
+  .fs-on-laptop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -61,14 +68,24 @@ body {
 }
 
 // Header
-.trigger {
-  display: none;
+@media (max-width: $on-laptop) {
+  .mobile-full-width { width: 100%; }
+  .mobile-flex-wrap { flex-wrap: wrap; }
+  .trigger {
+    display: none;
 
-  &__open {
-    display: block !important;
+    &__open {
+      display: block !important;
+    }
+    &:first-of-type {
+      margin: 20px 0 10px 0;
+    }
   }
-  &:first-of-type {
-    margin: 20px 0 10px 0;
+  .header__socials {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -93,18 +110,18 @@ body {
     box-sizing: content-box;
   }
   @include media-query($on-laptop) {
+    &__logo {
+      max-width: 160px;
+    }
     &__flex {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
     &__toggler { display: none; }
-  }
-  &__socials {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &__socials {
+      margin: 0 0 0 10px;
+    }
   }
   &__opened {
     box-shadow: 0 30px 50px #fff;
@@ -114,14 +131,6 @@ body {
 }
 .nav {
   margin: 0;
-  @include media-query($on-laptop) {
-    .trigger {
-      display: block;
-    }
-    &__flex {
-      display: flex;
-    }
-  }
 
   &__item {
     // przeniesc margin-right na mediaquery laptopa
@@ -146,6 +155,26 @@ body {
       border-radius: 50px;
       // padding: 10px;
       text-align: center;
+    }
+  }
+  @include media-query($on-laptop) {
+    .trigger {
+      display: block;
+    }
+    &__flex {
+      display: flex;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+    &__link {
+      padding: 10px;
+
+      &-featured {
+        padding: 10px 23px;
+      }
     }
   }
 }

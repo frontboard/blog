@@ -2,26 +2,28 @@
 {%- assign page_paths = site.header_pages | default: default_paths | reverse -%}
 
 <header class="header" role="banner">
-  <div class="container header__flex flex__spaced">
-    <div class="flex flex__spaced">
-      <h1 class="header__title">
-        <a class="header__link" rel="author" href="{{ '/' | relative_url }}">
-          <img src="/assets/logo2.svg" class="header__logo">
-        </a>
-      </h1>
+  <div class="container fs-on-laptop">
+    <div class="flex mobile-flex-wrap">
+      <div class="flex flex__spaced mobile-full-width">
+        <h1 class="header__title">
+          <a class="header__link" rel="author" href="{{ '/' | relative_url }}">
+            <img src="/assets/logo2.svg" class="header__logo">
+          </a>
+        </h1>
+        <label class="header__toggler"><input type="checkbox" id="nav-toggler" />Menu</label>
+      </div>
 
-      <label class="header__toggler"><input type="checkbox" id="nav-toggler" />Pokaż menu</label>
-    </div>
-    <ul class="nav nav__flex trigger" role="navigation">
-      {%- for path in page_paths -%}
+      <ul class="nav nav__flex trigger" role="navigation">
+        {%- for path in page_paths -%}
         {%- assign page = site.pages | where: "path", path | first -%}
         {%- if page.title -%}
         <li class="nav__item">
           <a href="{{ page.url | relative_url }}" class="nav__link">{{ page.title | escape }}</a>
         </li>
         {%- endif -%}
-      {%- endfor -%}
-    </ul>
+        {%- endfor -%}
+      </ul>
+    </div>
     <div class="header__flex trigger">
       <ul class="nav nav__flex" role="navigation">
         <li class="nav__item">
