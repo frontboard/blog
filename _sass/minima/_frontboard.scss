@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: $color-brand;
+}
+
 // Helpers
 .flex {
   display: flex;
