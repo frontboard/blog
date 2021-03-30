@@ -61,6 +61,17 @@ body {
 }
 
 // Header
+.trigger {
+  display: none;
+
+  &__open {
+    display: block !important;
+  }
+  &:first-of-type {
+    margin: 20px 0 10px 0;
+  }
+}
+
 .header {
   padding: 30px 0;
   background: #fff;
@@ -77,24 +88,53 @@ body {
     margin-right: 40px;
   }
   &__logo {
-    max-width: 160px;
+    max-width: 120px;
     padding: 5px;
     box-sizing: content-box;
   }
+  @include media-query($on-laptop) {
+    &__flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__toggler { display: none; }
+  }
+  &__socials {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__opened {
+    box-shadow: 0 30px 50px #fff;
+    z-index: 1111;
+    // fix z-index
+  }
 }
-
 .nav {
   margin: 0;
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 5px;
+  @include media-query($on-laptop) {
+    .trigger {
+      display: block;
+    }
+    &__flex {
+      display: flex;
     }
   }
+
+  &__item {
+    // przeniesc margin-right na mediaquery laptopa
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+    // border-bottom: 1px solid grey;
+  }
   &__link {
-    padding: 10px;
+    padding: 10px 0;
     color: $color-text;
     text-decoration: none;
+    display: block;
 
     &:hover {
       text-decoration: underline;
@@ -104,10 +144,12 @@ body {
       background: rgba($color-brand, 0.08);
       color: $color-brand;
       border-radius: 50px;
-      padding: 8px 23px;
+      // padding: 10px;
+      text-align: center;
     }
   }
 }
+
 
 // Categories
 .categories {
