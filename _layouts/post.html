@@ -8,6 +8,8 @@ layout: default
       <time class="article__meta" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% include date.html date=page.date %}
       </time>
+      <span class="separator">·</span>
+      <a href="#disqus_thread" class="article__authorLink">Przejdź do komentarzy</a>
       <h1 class="article__title" itemprop="name headline">{{ page.title | escape }}</h1>
       <p class="post-meta">
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
