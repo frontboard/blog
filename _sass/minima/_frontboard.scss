@@ -433,3 +433,37 @@ body {
     opacity: 1;
   }
 }
+
+// Share
+.share {
+  padding: 10px;
+  border-radius: 15px;
+
+  &__text {
+    color: $color-text;
+  }
+  &__item {
+    border-radius: 3px;
+  }
+  &__link {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.4s all;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    &-facebook { fill: #1877f2; }
+    &-twitter { fill: #08a0e9 };
+    &-linkedin { fill: #0077b5; }
+  }
+}
