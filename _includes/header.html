@@ -3,14 +3,20 @@
 
 <header class="header" role="banner">
   <div class="container fs-on-laptop">
-    <div class="flex mobile-flex-wrap">
-      <div class="flex flex__spaced mobile-full-width">
+    <div class="flex mobile__flexwrap">
+      <div class="flex flex__spaced mobile__fullwidth">
         <h1 class="header__title">
           <a class="header__link" rel="author" href="{{ '/' | relative_url }}">
             <img src="/assets/logo2.svg" class="header__logo">
           </a>
         </h1>
-        <label class="header__toggler"><input type="checkbox" id="nav-toggler" />Menu</label>
+        
+        <div class="mobile__visible">
+          <input type="checkbox" id="nav-toggler" style="display: none;">
+          <label class="header__toggler flex" for="nav-toggler" style="display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer;">
+            <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Menu</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='32' d='M80 160h352M80 256h352M80 352h352'/></svg>
+          </label>
+        </div>
       </div>
 
       <ul class="nav nav__flex trigger" role="navigation">

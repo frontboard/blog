@@ -56,6 +56,16 @@ body {
   }
 }
 
+// Mobiles only
+@include media-query($on-laptop) {
+  .mobile {
+    &__visible {
+      display: none;
+    }
+  }
+}
+
+
 // Buttons
 .button {
   font-family: 'Rubik';
@@ -69,8 +79,14 @@ body {
 
 // Header
 @media (max-width: $on-laptop) {
-  .mobile-full-width { width: 100%; }
-  .mobile-flex-wrap { flex-wrap: wrap; }
+  .mobile {
+    &__flexwrap {
+      flex-wrap: wrap;
+    }
+    &__fullwidth {
+      width: 100%;
+    }
+  }
   .trigger {
     display: none;
 
