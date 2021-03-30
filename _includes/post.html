@@ -1,0 +1,17 @@
+<li class="post">
+  <a href="{{ post.url | relative_url }}">
+    <div class="post__imageContainer">
+      <img src="/assets/vue-autoryzacja.jpg" alt="{{ post.title }}" class="post__image">
+    </div>
+  </a>
+
+  <div class="post__details">
+    <a href="#" class="font__mono">{{ post.categories }}</a>
+    
+    <a href="{{ post.url | relative_url }}" class="post__link">
+      <div class="post__title categories__title font__mono">{{ post.title }}</div>
+    </a>
+
+    <p class="post__p categories__p">{{ post.excerpt | strip_html }}</p>
+  </div>
+</li>

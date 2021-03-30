@@ -1,56 +1,19 @@
 ---
 layout: default
 ---
+{% include categories.html %}
+{% include featured_post.html %}
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in paginator.posts -%}
-      <li>
-        <span class="post-meta">
-          {% include date.html date=post.date %}
-        </span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {{ post.excerpt | strip_html }}
-      </li>
+{%- if site.posts.size > 0 -%}
+  <div class="container home">
+    <ul class="home__posts">
+      {%- for post in site.posts limit:6 -%}
+        {% include post.html post=post %}
       {%- endfor -%}
     </ul>
 
-    <!-- Pagination -->
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← Wstecz</a>
-      {% endif %}
-
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <span>{{ page }}</span>
-        {% elsif page == 1 %}
-          <a href="/">{{ page }}</a>
-        {% else %}
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
-
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Dalej →</a>
-      {% endif %}
-    </div>
-    {% endif %}
-
-    <p class="rss-subscribe">subskrybuj <a href="{{ '/feed.xml' | relative_url }}">kanał RSS</a></p>
-  {%- endif -%}
-
-</div>
+    {%- if site.posts.size > 6 -%}
+      <button class="button button__dark">Załaduj więcej</button>
+    {%- endif -%}
+  </div>
+{%- endif -%}
