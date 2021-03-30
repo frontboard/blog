@@ -5,13 +5,9 @@ layout: default
 {%- if site.posts.size > 0 -%}
   <div class="container home">
     <ul class="home__posts">
-      {%- for post in site.posts limit:6 -%}
+      {%- for post in site.posts -%}
         {% include post.html post=post %}
       {%- endfor -%}
     </ul>
-
-    {%- if site.posts.size > 6 -%}
-      <button class="button button__dark">Załaduj więcej</button>
-    {%- endif -%}
   </div>
 {%- endif -%}
