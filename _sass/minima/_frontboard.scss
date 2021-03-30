@@ -246,11 +246,17 @@ body {
 
 // Article
 .article {
-  width: 75%;
+  @include media-query($on-laptop) {
+    width: 75%;
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__sidebar {
+      width: 23%;
+      margin-top: 190px;
+    }
   }
   &__content {
     line-height: 1.5;
@@ -334,8 +340,7 @@ body {
     }
   }
   &__sidebar {
-    width: 23%;
-    margin-top: 190px;
+    margin: 30px 0;
   }
   &__header {
     margin: 50px 0 40px 0;
