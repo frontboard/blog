@@ -197,6 +197,8 @@ a {
   &__authorLink {
     color: $color-disabled;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
 
     &:hover {
       text-decoration: underline;
