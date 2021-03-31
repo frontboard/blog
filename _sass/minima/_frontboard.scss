@@ -226,24 +226,6 @@ a {
   margin-top: 50px;
   padding: 40px 0;
 
-  &__item {
-    margin-right: 10px;
-  }
-  &__icon {
-    width: 24px;
-    height: 24px;
-    fill: $color-text;
-    color: $color-text;
-  }
-  &__link {
-    color: $color-text;
-    text-decoration: none;
-
-    &:hover {
-      color: $color-brand;
-      text-decoration: underline;
-    }
-  }
   &__list {
     margin-top: 15px;
   }
@@ -361,6 +343,31 @@ a {
     &-link {
       &:hover {
         background: #f1f1f1;
+      }
+    }
+  }
+}
+
+// Socials
+.social {
+  &__item {
+    margin-right: 10px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $color-text;
+    color: $color-text;
+    transition: 0.4s all;
+  }
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      svg {
+        transform: scale(1.25);
+        fill: $color-brand;
       }
     }
   }
