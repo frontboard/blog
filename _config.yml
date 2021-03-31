@@ -14,6 +14,7 @@ lang: pl
 google_analytics: G-SPHS5KD25L
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
@@ -22,6 +23,9 @@ plugins:
   - jekyll-sitemap
 permalink: /:title
 include: ['_pages']
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
 
 # Pagination settings
 paginate: 9
