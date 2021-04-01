@@ -224,12 +224,45 @@ a {
 
 // Footer
 .footer {
-  background: #f8f8fc;
   margin-top: 50px;
   padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color: $color-disabled;
 
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+
+    &:hover {
+      color: $color-brand;
+      text-decoration: underline;
+    }
+  }
   &__list {
-    margin-top: 15px;
+    margin: 20px auto 5px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    &:not(:last-child) {
+      &::after {
+        content: '·';
+        opacity: 0.3;
+      }
+    }
+  }
+  &__logo {
+    max-height: 20px;
+    // opacity: 0.2;
+    margin-right: 20px;
+  }
+  &__socials {
+    display: flex;
+    justify-content: center;
   }
 }
 
