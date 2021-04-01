@@ -7,13 +7,13 @@ const isHeaderSticky = () => {
   } else {
     header.classList.remove('header__isSticky');
   }
-  console.log(`window: ${window.pageYOffset} / header: ${header.offsetTop}`);
 };
 
 window.addEventListener('scroll', isHeaderSticky);
 
 // Menu dropdown on click
 const hamburgerMenu = document.querySelector('#nav-toggler');
+
 const toggleMenu = () => {
   if (hamburgerMenu.checked) {
     document.querySelector('header.header').classList.add('header__opened');
@@ -22,7 +22,6 @@ const toggleMenu = () => {
     document.querySelector('header.header').classList.remove('header__opened');
     document.querySelectorAll('.trigger').forEach((el) => el.classList.remove('trigger__open'));
   }
-  // console.log(hamburgerMenu.value);
 };
 
 hamburgerMenu.addEventListener('input', toggleMenu);
