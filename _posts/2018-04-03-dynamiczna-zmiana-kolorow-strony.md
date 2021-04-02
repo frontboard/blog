@@ -77,16 +77,20 @@ button.addEventListener('click', toggleTheme);
 ```
 
 ## Zapis wyboru użytkownika
-Aby nie powielać w kilku miejscach nazwy klasy `darkmode` stwórzmy prostą konfigurację:
+Aby nie powielać tych samych wartości w kilku miejscach, stwórzmy prostą konfigurację:
 
 ```js
+const body = document.querySelector('body');
+
 const config = {
   className: 'darkmode',
   cookieName: 'darkmode'
 };
 ```
 
-`config.cookieName` przyda się do tworzenia, usuwania i odczytu wartości `localStorage`. Chcąc zapisać wybór użytkownika, należy rozwinąć istniejącą już funkcję `toggleTheme` o kilka metod `localStorage`. Poniższy kod używa już podstawionych wartości obiektu.
+`config.cookieName` przyda się w dalszej części do tworzenia, usuwania i odczytu wartości `localStorage`.
+
+Chcąc zapisać wybór użytkownika, należy rozwinąć istniejącą już funkcję `toggleTheme` o kilka metod `localStorage`. Poniższy kod używa już podstawionych wartości obiektu.
 
 ```js
 const toggleTheme = () => {
