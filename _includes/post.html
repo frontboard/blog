@@ -1,9 +1,13 @@
 <li class="post">
   <div class="post__details">
     {%- if post.img -%}
-      <img src="{{ post.img | prepend: '/assets/img/posts/' }}" alt="" class="post__image">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.img | prepend: '/assets/img/posts/' }}" alt="{{ post.title }}" class="post__image">
+      </a>
     {%- endif -%}
+
     <div class="post__meta">{% include date.html date=post.date %}</div>
+
     <a href="{{ post.url | relative_url }}" class="post__link">
       <div class="post__title">{{ post.title }}</div>
     </a>
