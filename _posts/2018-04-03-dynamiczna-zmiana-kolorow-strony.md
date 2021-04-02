@@ -10,7 +10,9 @@ redirect_from:
 ---
 Wielokrotnie na frontendowych grupach napotykałem pytania dotyczące stworzenia *theme switchera*. Jego zadaniem jest dopasowanie odpowiedniej wersji kolorystycznej witryny w zależności od ustawienia użytkownika. Rozwiązanie jest wbrew pozorom dosyć proste, choć zależy to od ilości obsługiwanych przypadków.
 
-Najprostszym przypadkiem, którym zajmiemy się w dalszej części artykułu, będzie obsługa zmiany motywu strony po kliknięciu przycisku. Chcąc wykorzystać maksymalny potencjał takiej funkcjonalności, można pokusić się na przykład o odczytywanie preferencji systemowych (patrz: [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) i w zależności od wyniku serwować jasny lub ciemny tryb. Dodatkowym atutem będzie zapisywanie wyboru użytkownika, co można rozwiązać za pomocą [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). Kolejna rzecz: automatyczne włączanie ciemnego trybu o późnej godzinie. Jak widzisz, pomysłów na rozwój i implementację takiej funkcji jest dosyć sporo.
+Chcąc wykorzystać maksymalny potencjał takiej funkcjonalności, można pokusić się na przykład o odczytywanie preferencji systemowych (patrz: [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) i w zależności od wyniku serwować jasny lub ciemny tryb. Dodatkowym atutem będzie zapisywanie wyboru użytkownika, co można rozwiązać za pomocą [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). Kolejna rzecz: automatyczne włączanie ciemnego trybu o późnej godzinie. Jak widzisz, pomysłów na rozwój i implementację takiej funkcji jest dosyć sporo. **Poniższym wpisem przedstawię Ci, jak stworzyć dwa motywy strony, jak je zmieniać i ładować po odświeżeniu strony.**
+
+**[🚀 Demo](https://frontboard.github.io/theme-switcher/)** / [Kod źródłowy](https://github.com/frontboard/theme-switcher)
 
 ## Logika skryptu
 Przed rozpoczęciem kodowania warto byłoby zastanowić się, jak zaimplementować tę funkcję. Można podpinać i odpinać arkusze ze stylami, ale jest prostszy sposób:
@@ -72,6 +74,53 @@ const button = document.querySelector('#theme-switcher');
 const toggleTheme = () => document.querySelector('body').classList.toggle('darkmode');
 
 button.addEventListener('click', toggleTheme);
+```
+
+## Zapis wyboru użytkownika
+Aby nie powielać w kilku miejscach nazwy klasy `darkmode` stwórzmy prostą konfigurację:
+
+```js
+const config = {
+  className: 'darkmode',
+  cookieName: 'darkmode'
+};
+```
+
+`config.cookieName` przyda się do tworzenia, usuwania i odczytu wartości `localStorage`. Chcąc zapisać wybór użytkownika, należy rozwinąć istniejącą już funkcję `toggleTheme` o kilka metod `localStorage`. Poniższy kod używa już podstawionych wartości obiektu.
+
+```js
+const toggleTheme = () => {
+  body.classList.toggle(config.className);
+
+  if (body.classList.contains(config.className)) { // jeśli tryb został ustawiony jako ciemny
+    localStorage.setItem(config.cookieName, 'true'); // definiuje wartość localStorage.darkmode
+  } else {
+    localStorage.removeItem(config.cookieName); // usuwa wartość localStorage.darkmode
+  }
+};
+```
+
+Wchodząc w konsolę i pobierając zapisaną (bądź nie) wartość `localStorage.getItem('darkmode')` otrzymasz:
+* w przypadku trybu ciemnego: `"true"`
+* w przypadku trybu jasnego: `null`
+
+## Ładowanie motywu po odświeżeniu strony
+Skoro zapis już działa, przydałoby się załadować motyw po odświeżeniu lub ponownym odwiedzeniu strony. Warto nadmienić, że w przypadku użycia [`sessionStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) kod nie mógłby zadziałać, bo `sessionStorage` opróżnia się po zamknięciu karty w przeglądarce. `localStorage` ma bezterminową ważność.
+
+Do załadowania motywu wykorzystam osobną funkcję, która sprawdzi czy istnieje wartość `localStorage.darkmode` - jeśli tak, nada klasę `darkmode` znacznikowi `body`.
+
+```js
+const loadDarkTheme = () => {
+  if (localStorage.getItem(config.cookieName)) {
+    body.classList.add(config.className);
+  }
+};
+```
+
+Tak utworzoną funkcję strzałkową można podpiąć do obiektu `window` na zdarzenie `load` (kod zostanie wykonany po załadowaniu strony).
+
+```js
+window.addEventListener('load', loadDarkTheme);
 ```
 
 ## Podsumowanie
