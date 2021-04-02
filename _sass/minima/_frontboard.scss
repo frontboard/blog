@@ -173,6 +173,7 @@ a {
   &__content {
     line-height: 1.5;
     color: $color-text;
+    margin-bottom: 60px;
 
     @include content-formatting;
   }
