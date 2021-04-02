@@ -4,7 +4,7 @@ date: 2018-06-18 04:11:56 +0200
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/regexp.jpg
+img: javascript-regexp-wprowadzenie.jpg
 redirect_from:
   - /wyrazenia-regularne-regexp-javascript-wstep/
 ---

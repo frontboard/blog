@@ -4,7 +4,7 @@ date: 2017-09-05T19:29:30+00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/jsw60dni.png
+img: jsw60dni.jpg
 redirect_from:
   - /instrukcje-warunkowe-jak-z-nich-korzystac/
 ---

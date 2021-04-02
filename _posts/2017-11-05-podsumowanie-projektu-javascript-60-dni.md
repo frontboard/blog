@@ -4,7 +4,7 @@ date: 2017-11-05T14:15:39+00:00
 author: Kacper Stawiński
 layout: post
 categories: inne
-img: /assets/img/jsw60dni-podsumowanie.png
+img: podsumowanie-projektu-javascript-60-dni.jpg
 redirect_from:
   - /podsumowanie-projektu-javascript-60-dni/
 ---

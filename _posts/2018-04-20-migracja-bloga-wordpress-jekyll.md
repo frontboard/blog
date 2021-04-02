@@ -4,7 +4,7 @@ date: 2018-04-20 17:58:00 +02:00
 author: Kacper Stawiński
 layout: post
 categories: inne
-img: /assets/img/zegnaj-wordpress-witaj-jekyll.png
+img: migracja-bloga-wordpress-jekyll.jpg
 redirect_from:
   - /zegnaj-wordpress-witaj-jekyll
   - /zegnaj-wordpress-witaj-jekyll/

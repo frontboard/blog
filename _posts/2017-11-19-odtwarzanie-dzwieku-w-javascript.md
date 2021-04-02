@@ -4,7 +4,7 @@ date: 2017-11-19T13:00:22+00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/odtwarzanie-dzwieku-javascript.jpg
+img: odtwarzanie-dzwieku-javascript.jpg
 redirect_from:
   - /odtwarzanie-dzwieku-w-javascript/
 ---

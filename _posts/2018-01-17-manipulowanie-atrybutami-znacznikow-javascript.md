@@ -4,7 +4,7 @@ date: 2018-01-17 08:47:08 +00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/atrybuty-javascript.png
+img: atrybuty-javascript.jpg
 redirect_from:
   - /manipulowanie-atrybutami-znacznikow-javascript/
 ---

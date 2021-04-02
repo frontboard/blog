@@ -4,7 +4,7 @@ date: 2017-09-03T16:58:04+00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/jsw60dni.png
+img: jsw60dni.jpg
 redirect_from:
   - /zakres-zmiennych-czyli-zmienne-lokalne-globalne
   - /zakres-zmiennych-czyli-zmienne-lokalne-globalne/

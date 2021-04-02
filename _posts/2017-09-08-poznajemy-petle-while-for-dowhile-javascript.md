@@ -4,7 +4,7 @@ date: 2017-09-08T18:00:17+00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/jsw60dni.png
+img: jsw60dni.jpg
 redirect_from:
   - /poznajemy-petle-while-for-dowhile
   - /poznajemy-petle-while-for-dowhile/

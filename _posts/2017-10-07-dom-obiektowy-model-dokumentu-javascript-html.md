@@ -4,7 +4,7 @@ date: 2017-10-07T14:17:21+00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/jsw60dni.png
+img: jsw60dni.jpg
 redirect_from:
   - /dom-obiektowy-model-dokumentu
   - /dom-obiektowy-model-dokumentu/

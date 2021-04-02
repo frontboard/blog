@@ -4,7 +4,7 @@ date: 2018-10-22 15:53:53 +0200
 author: Kacper Stawiński
 layout: post
 categories: javascript vue
-img: /assets/img/vue01.png
+img: vue-wprowadzenie.jpg
 redirect_from:
   - /wprowadzenie-vue-js/
 ---

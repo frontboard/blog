@@ -4,7 +4,7 @@ date: 2017-08-29T18:20:34+00:00
 author: Kacper Stawiński
 layout: post
 categories: inne
-img: /assets/img/jsw60dni.png
+img: jsw60dni.jpg
 redirect_from:
   - /czy-to-kolejny-nudny-blog-pewnie-tak/
 ---

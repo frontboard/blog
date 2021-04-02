@@ -4,7 +4,7 @@ date: 2017-09-15T16:07:54+00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/jsw60dni.png
+img: jsw60dni.jpg
 redirect_from:
   - /funkcje-od-podstaw-javascript/
 ---

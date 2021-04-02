@@ -4,7 +4,7 @@ date: 2017-09-01T14:50:41+00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/jsw60dni.png
+img: jsw60dni.jpg
 redirect_from:
   - /konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych
   - /konstrukcja-zmiennej-debugowanie-kodu-operacje-zmiennych/

@@ -4,7 +4,7 @@ date: 2018-04-02 09:00:00 +01:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/funkcje-strzalkowe.jpg
+img: js-funkcje-strzalkowe-arrow-functions.jpg
 redirect_from:
   - /funkcje-strzalkowe-es6-javascript/
 ---

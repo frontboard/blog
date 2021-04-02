@@ -4,7 +4,7 @@ date: 2018-10-25 18:23:57 +0100
 author: Kacper Stawiński
 layout: post
 categories: javascript vue
-img: /assets/img/vue02.png
+img: vue-dyrektywy-warunkowe.jpg
 redirect_from:
   - /dyrektywy-warunkowe-vue-js/
 ---

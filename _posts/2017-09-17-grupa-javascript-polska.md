@@ -4,7 +4,7 @@ date: 2017-09-17T19:07:15+00:00
 author: Kacper Stawiński
 layout: post
 categories: inne
-img: /assets/img/grupa-na-facebooku.jpg
+img: grupa-javascript-polska.jpg
 redirect_from:
   - /grupa-javascript-polska/
 ---

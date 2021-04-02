@@ -4,7 +4,7 @@ date: 2017-10-14T14:55:55+00:00
 author: Kacper Stawiński
 layout: post
 categories: javascript
-img: /assets/img/jsw60dni.png
+img: jsw60dni.jpg
 redirect_from:
   - /tworzenie-obiektow-w-javascript
   - /tworzenie-obiektow-w-javascript/
