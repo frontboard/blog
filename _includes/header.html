@@ -21,21 +21,23 @@
 
       <ul class="nav nav__flex trigger" role="navigation">
         {%- for path in page_paths -%}
-        {%- assign page = site.pages | where: "path", path | first -%}
-        {%- if page.title -%}
+        {%- assign page_from_loop = site.pages | where: "path", path | first -%}
+        {%- if page_from_loop.title -%}
         <li class="nav__item">
-          <a href="{{ page.url | relative_url }}" class="nav__link">{{ page.title | escape }}</a>
+          <a href="{{ page_from_loop.url | relative_url }}" class="nav__link">{{ page_from_loop.title | escape }}</a>
         </li>
         {%- endif -%}
         {%- endfor -%}
       </ul>
     </div>
     <div class="header__flex trigger">
+      {%- if page.layout == 'post' -%}
       <ul class="nav nav__flex" role="navigation">
         <li class="nav__item">
-          <a href="#" class="nav__link nav__link-featured">Dołącz do newslettera!</a>
+          <a href="#newsletter" class="nav__link nav__link-featured">Dołącz do newslettera!</a>
         </li>
       </ul>
+      {%- endif -%}
       <div class="header__socials">{%- include social.html -%}</div>
     </div>
   </div>
