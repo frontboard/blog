@@ -1,4 +1,4 @@
-<div class="newsletter">
+<form class="newsletter" action="https://frontboard.us1.list-manage.com/subscribe/post" method="POST">
   <img src="/assets/img/newsletter-icon.svg" alt="" class="newsletter__icon">
 
   <div class="newsletter__form">
@@ -9,13 +9,13 @@
 
     <div class="newsletter__fields">
       <div class="newsletter__group">
-        <input type="text" id="firstname" class="newsletter__input">
-        <label for="firstname" class="newsletter__label">Imię</label>
+        <input type="text" class="newsletter__input" name="MERGE1" id="MERGE1">
+        <label for="MERGE1" class="newsletter__label">Imię</label>
       </div>
 
       <div class="newsletter__group">
-        <input type="email" id="email" class="newsletter__input">
-        <label for="email" class="newsletter__label">E-mail</label>
+        <input type="email" class="newsletter__input" id="MERGE0" name="MERGE0">
+        <label for="MERGE0" class="newsletter__label">E-mail</label>
       </div>
     </div>
 
@@ -23,7 +23,11 @@
       <input type="checkbox" id="privacy" class="newsletter__checkbox">
       <label for="privacy" class="newsletter__label">Akceptuję <a href="#">politykę prywatności</a> <span title="Pole wymagane">*</span></label>
     </div>
+    
+    <!-- Mailchimp required fields -->
+    <input type="hidden" name="u" value="fbe5fcc41d8bbcfa8e2e2cd77">
+    <input type="hidden" name="id" value="552a514824">
 
-    <button class="newsletter__button" id="newsletter-submit">Zapisuję się!</button>
+    <button class="newsletter__button" id="newsletter-submit" type="submit">Zapisuję się!</button>
   </div>
-</div>
+</form>
