@@ -510,7 +510,17 @@ a {
     @include media-query($on-laptop) {
       display: flex;
     }
-}
+  }
+  &__error {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+    visibility: hidden;
+
+    &-visible {
+      visibility: visible;
+    }
+  }
 }
 
 .newsletter__input:focus + .newsletter__label {

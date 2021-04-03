@@ -25,3 +25,36 @@ const toggleMenu = () => {
 };
 
 hamburgerMenu.addEventListener('input', toggleMenu);
+
+// Newsletter validation
+const newsletter = {
+  button: document.querySelector('#newsletter-submit'),
+  error: document.querySelector('.newsletter__error'),
+  errorNoPrivacy: 'Zaakceptuj politykę prywatności, aby przejść dalej.',
+  errorEmptyField: 'Wypełnij wszystkie pola formularza, aby przejść dalej.',
+  errorVisibleClassName: 'newsletter__error-visible',
+
+  throwError: (msg, event) => {
+    event.preventDefault();
+    newsletter.error.textContent = msg;
+    newsletter.error.classList.add(newsletter.errorVisibleClassName);
+  },
+
+  validate: (event) => {
+    const form = {
+      firstname: document.querySelector('#MERGE1').value,
+      email: document.querySelector('#MERGE0').value,
+      checkbox: document.querySelector('#privacy').checked
+    };
+
+    if (form.firstname && form.email) {
+      if (!form.checkbox) {
+        newsletter.throwError(newsletter.errorNoPrivacy, event);
+      }
+    } else {
+        newsletter.throwError(newsletter.errorEmptyField, event);
+    }
+  },
+};
+
+newsletter.button.addEventListener('click', (event) => newsletter.validate(event));
