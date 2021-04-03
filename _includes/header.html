@@ -22,7 +22,7 @@
       <ul class="nav nav__flex trigger" role="navigation">
         {%- for path in page_paths -%}
         {%- assign page_from_loop = site.pages | where: "path", path | first -%}
-        {%- if page_from_loop.title -%}
+        {%- if page_from_loop.title and page_from_loop.hidden != true -%}
         <li class="nav__item">
           <a href="{{ page_from_loop.url | relative_url }}" class="nav__link">{{ page_from_loop.title | escape }}</a>
         </li>
