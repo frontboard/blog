@@ -1,7 +1,7 @@
 ---
 title: "Przełącznik motywów. Dynamiczna zmiana kolorów strony"
 date: 2018-04-03 18:45:00 +01:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: theme-switcher-przelacznik-motywow-javascript.jpg

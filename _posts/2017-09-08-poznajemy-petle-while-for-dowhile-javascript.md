@@ -1,7 +1,7 @@
 ---
 title: "Poznajemy pętle (while, for, do… while)"
 date: 2017-09-08T18:00:17+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: jsw60dni.jpg

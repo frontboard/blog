@@ -1,7 +1,7 @@
 ---
 title: "Wprowadzenie do Vue.js — instancja Vue i hello world"
 date: 2018-10-22 15:53:53 +0200
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript vue
 img: vue-wprowadzenie.jpg

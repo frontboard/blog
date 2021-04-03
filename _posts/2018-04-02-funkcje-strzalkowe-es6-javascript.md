@@ -1,7 +1,7 @@
 ---
 title: "Funkcje strzałkowe (ES6) w JavaScript"
 date: 2018-04-02 09:00:00 +01:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: js-funkcje-strzalkowe-arrow-functions.jpg

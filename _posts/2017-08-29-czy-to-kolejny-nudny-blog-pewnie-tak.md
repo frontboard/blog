@@ -1,7 +1,7 @@
 ---
 title: "Czy to kolejny nudny blog? Pewnie tak."
 date: 2017-08-29T18:20:34+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: inne
 img: jsw60dni.jpg

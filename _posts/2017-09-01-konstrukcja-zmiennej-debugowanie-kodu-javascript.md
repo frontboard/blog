@@ -1,7 +1,7 @@
 ---
 title: "Konstrukcja zmiennej, debugowanie kodu, operacje na zmiennych"
 date: 2017-09-01T14:50:41+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: jsw60dni.jpg

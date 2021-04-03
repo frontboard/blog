@@ -1,7 +1,7 @@
 ---
 title: "Wyrażenia regularne w JavaScript – wstęp"
 date: 2018-06-18 04:11:56 +0200
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: javascript-regexp-wprowadzenie.jpg

@@ -1,7 +1,7 @@
 ---
 title: "Podsumowanie projektu JavaScript w 60 dni"
 date: 2017-11-05T14:15:39+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: inne
 img: podsumowanie-projektu-javascript-60-dni.jpg

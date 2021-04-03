@@ -1,7 +1,7 @@
 ---
 title: Funkcje w JavaScript od podstaw
 date: 2017-09-15T16:07:54+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: jsw60dni.jpg

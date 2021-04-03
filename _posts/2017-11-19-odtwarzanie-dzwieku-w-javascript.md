@@ -1,7 +1,7 @@
 ---
 title: Powiadomienia dźwiękowe, czyli odtwarzanie muzyki w JavaScript
 date: 2017-11-19T13:00:22+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: odtwarzanie-dzwieku-javascript.jpg

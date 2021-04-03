@@ -1,7 +1,7 @@
 ---
 title: "Manipulowanie atrybutami znaczników w JavaScript"
 date: 2018-01-17 08:47:08 +00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: atrybuty-javascript.jpg

@@ -1,7 +1,7 @@
 ---
 title: "Zakres zmiennych, czyli zmienne lokalne i globalne oraz hoisting"
 date: 2017-09-03T16:58:04+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: jsw60dni.jpg

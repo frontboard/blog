@@ -1,7 +1,7 @@
 ---
 title: "Instrukcje warunkowe - jak z nich korzystać?"
 date: 2017-09-05T19:29:30+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: jsw60dni.jpg

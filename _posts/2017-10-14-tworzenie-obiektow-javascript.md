@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie obiektów w JavaScript"
 date: 2017-10-14T14:55:55+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: jsw60dni.jpg

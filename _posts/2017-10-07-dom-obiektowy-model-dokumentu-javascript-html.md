@@ -1,7 +1,7 @@
 ---
 title: "Struktura DOM, pobieranie elementów z kodu HTML"
 date: 2017-10-07T14:17:21+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: jsw60dni.jpg

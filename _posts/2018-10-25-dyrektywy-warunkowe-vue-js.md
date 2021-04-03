@@ -1,7 +1,7 @@
 ---
 title: "Dyrektywy warunkowe w Vue.js"
 date: 2018-10-25 18:23:57 +0100
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript vue
 img: vue-dyrektywy-warunkowe.jpg

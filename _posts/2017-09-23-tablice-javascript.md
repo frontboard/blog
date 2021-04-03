@@ -1,7 +1,7 @@
 ---
 title: Tablice w JavaScript
 date: 2017-09-23T15:13:30+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: javascript
 img: jsw60dni.jpg

@@ -1,7 +1,7 @@
 ---
 title: "Grupa na Facebooku: JavaScript Polska"
 date: 2017-09-17T19:07:15+00:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: inne
 img: grupa-javascript-polska.jpg

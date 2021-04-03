@@ -1,0 +1,10 @@
+{% assign author = site.data.authors[include.author_id] %}
+
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <div class="p-author h-card" itemprop="name">
+    <a href="{{ author.page | relative_url }}" class="article__authorLink">
+      <img src="{{ author.avatar }}" class="article__authorImage">
+      <span itemprop="name">{{ author.fullname }}</span>
+    </a>
+  </div>
+</span>

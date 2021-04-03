@@ -1,7 +1,7 @@
 ---
 title: "Żegnaj WordPress, witaj Jekyll!"
 date: 2018-04-20 17:58:00 +02:00
-author: Kacper Stawiński
+author: kstawinski
 layout: post
 categories: inne
 img: migracja-bloga-wordpress-jekyll.jpg
