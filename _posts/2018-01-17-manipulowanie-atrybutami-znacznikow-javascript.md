@@ -99,12 +99,11 @@ Niezbędna będzie dla nas metoda `setAttribute`, dzięki której zmienimy warto
 ```js
 const togglePassword = () => {
 	const password = document.querySelector('#password');
-  
+
 	if (checkbox.checked) {
 		console.log('Checkbox jest zaznaczony. JavaScript, pokaż hasło!');
 		password.setAttribute('type', 'text');
-	}
-	else {
+	} else {
 		console.log('Checkbox odznaczony. Ukryj hasło!');
 		password.setAttribute('type', 'password');
 	}
