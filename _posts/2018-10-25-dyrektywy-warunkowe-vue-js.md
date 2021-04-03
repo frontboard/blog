@@ -3,7 +3,7 @@ title: "Dyrektywy warunkowe w Vue.js"
 date: 2018-10-25 18:23:57 +0100
 author: kstawinski
 layout: post
-categories: javascript vue
+categories: vue
 img: vue-dyrektywy-warunkowe.jpg
 redirect_from:
   - /dyrektywy-warunkowe-vue-js/

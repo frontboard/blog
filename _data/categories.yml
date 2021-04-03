@@ -1,0 +1,11 @@
+vue:
+  name: Vue.js
+  icon: /assets/img/logo-vue.svg
+  url: /kategorie#vue
+javascript:
+  name: JavaScript
+  icon: /assets/img/logo-javascript.svg
+  url: /kategorie#javascript
+inne:
+  name: Po godzinach
+  url: /kategorie#inne

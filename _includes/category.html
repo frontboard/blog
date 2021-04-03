@@ -1,0 +1,8 @@
+{% assign cat = site.data.categories[include.category_slug] %}
+
+<a href="{{ cat.url }}" class="category">
+  {%- if cat.icon -%}
+    <img src="{{ cat.icon }}" class="category__icon">
+  {%- endif -%}
+  <div class="category__name">{{ cat.name }}</div>
+</a>
