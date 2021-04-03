@@ -31,13 +31,15 @@
       </ul>
     </div>
     <div class="header__flex trigger">
-      {%- if page.layout == 'post' -%}
       <ul class="nav nav__flex" role="navigation">
         <li class="nav__item">
+          {%- if page.layout == 'post' -%}
           <a href="#newsletter" class="nav__link nav__link-featured">Dołącz do newslettera!</a>
+          {%- else -%}
+          <a href="/newsletter" class="nav__link nav__link-featured">Dołącz do newslettera!</a>
+          {%- endif -%}
         </li>
       </ul>
-      {%- endif -%}
       <div class="header__socials">{%- include social.html -%}</div>
     </div>
   </div>
