@@ -9,60 +9,54 @@ redirect_from:
   - /poznajemy-petle-while-for-dowhile
   - /poznajemy-petle-while-for-dowhile/
 ---
-Pętle wykorzystywane są chyba w każdym języku programowania. Zazwyczaj używa się ich, by skrócić kod (a co za tym idzie - uporządkować) i powtarzać wybraną czynność ileś razy. Nie ma co przedłużać, bo **pętle to dosyć prosty temat**, tak więc zabierajmy się za praktykę.
+Pętle wykorzystywane są chyba w każdym języku programowania. Zazwyczaj **używa się ich, by skrócić kod** (tym samym zwiększyć wydajność) i powtarzać wybraną czynność ileś razy. Nie ma co przedłużać, bo pętle to dosyć prosty temat, tak więc zabierajmy się za praktykę.
 
-## Pętla for
+## Pętla [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement)
+Jedną z częściej wykorzystywanych pętli w JavaScript jest `for`. Wydaje mi się, że swoją popularność zawdzięcza prostocie, która dla początkujących osób z kolei może wydawać się nieco skomplikowana. Konstrukcja pętli utworzonej za pomocą `for` wygląda następująco:
 
-Najczęściej wykorzystywany rodzaj pętli w JavaScript to właśnie **for**. Wydaje mi się, że swoją popularność zawdzięcza prostocie, która dla początkujących osób może wydawać się trudna do ogarnięcia. Konstrukcja takiej pętli wygląda następująco:
-
-{% highlight javascript %}
-for(zmienna;warunek;operacja na zmiennej) {
+```js
+for (zmienna; warunek; operacja na zmiennej) {
   // zadanie pętli
 }
-{% endhighlight %}
+```
 
-Ale okej, możecie jeszcze nie do końca rozumieć działanie pętli for. Przejdźmy do tego, co lubię najbardziej - praktykę! Chciałbym za pomocą pętli w JavaScript wyświetlić 5 razy napis "Witaj czytelniku!", który poprzedzony będzie numerem (od 1 do 5).
+Przechodząc do praktyki: chciałbym za pomocą pętli w JavaScript wyświetlić 5 razy tekst "Witaj czytelniku!", który poprzedzony będzie cyfrą (od 1 do 5).
 
-{% highlight javascript %}
-for(let ilosc = 1;ilosc<6;ilosc++) {
-  document.write(ilosc + ". Witaj czytelniku!<br />")
+```js
+for (let i = 1; i < 6; i++) {
+  console.log(`${i} Witaj czytelniku!`);
 }
-{% endhighlight %}
+```
 
-Rolę zmiennej *inline* pełni tutaj `let ilosc = 1`, warunek to `ilosc<6`, a operacja to powiększenie zmiennej o 1, czyli `ilosc++`. Efekt widoczny w oknie przeglądarki jest taki, jaki chciałem osiągnąć. Zresztą, zobaczcie sami!
+Rolę zmiennej *inline* pełni tutaj `let i = 1`, warunek to `i < 6`, a operacją jest zwiększenie wartości zmiennej o 1, czyli `i++`.
 
-![Konsola JSBin.com](/assets/img/efekt-petli-for.png)
-*Efekt widoczny w przeglądarce po wykonaniu pętli for*
+Zmienna na początku przyjęła wartość 1, bo indeksowanie w JavaScript zaczyna się od 0. Tak więc moglibyśmy ustawić zmienną `i` na 0, ale wtedy numeracja nie byłaby taka, jaką chciałem osiągnąć.
 
-Zmienna na początku przyjęła wartość 1, bo indeksowanie w JavaScript zaczyna się od 0. Tak więc moglibyśmy ustawić zmienną *ilosc* na 0, ale wtedy numeracja zdań nie byłaby taka, jaką chciałem osiągnąć. Więcej o tym w [pierwszym poście](/konstrukcja-zmiennej-debugowanie-kodu-javascript) o zmiennych.
+## Pętla [`while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#while_statement)
+Ten rodzaj pętli jest bardzo podobny do poprzedniej - for (no shit, czy wszystkie pętle nie są do siebie podobne?). Różni się od niej jedynie zapisem i tym, że np. o zwiększenie zmiennej trzeba zadbać w ciągu wykonywania kodu. Przykłady wszędzie będą takie same, abyś mógł zobaczyć, jak różnią się od siebie poszczególne rodzaje pętli.
 
-## Pętla while
+```js
+let i = 1;
 
-Ten rodzaj pętli jest bardzo podobny do poprzedniej - for (zresztą wszystkie pętle są do siebie bardzo podobne). Różni się od niej jedynie zapisem i tym, że np. o zwiększenie zmiennej trzeba zadbać w ciągu wykonywania kodu. Przykłady wszędzie będą takie same, abyście mogli zobaczyć, jak bardzo różnią się od siebie poszczególne rodzaje pętli.
+while (i < 6) { // warunek
+  console.log(`${i} Witaj czytelniku!`);
+  i++; // zwiększenie zmiennej o 1
+}
+```
 
-{% highlight javascript %}
-const ilosc = 1; // zdefiniowanie zmiennej
+Efekt jest taki jaki uzyskaliśmy wcześniej - pięć linijek z informacją "Witaj czytelniku!". Z tą jednak różnicą, że kod zwiększył się z 3 do 5 linijek.
 
-while(const<6) { // warunek
-  document.write(ilosc + ". Witaj czytelniku!<br />"); // wyswietlenie ciagu znakow
-  ilosc++; // zwiekszenie zmiennej o 1
-} // koniec petli
-{% endhighlight %}
+## Pętla [`do... while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement)
+W tym przypadku na pewno zauważycie ogromne podobieństwo do pętli typu while. Różnica w praktyce jest taka, że **kod przynajmniej raz wykona się przed sprawdzeniem warunku**, który zapisany jest tuż za ciałem pętli.
 
-Efekt jest taki jaki uzyskaliśmy wcześniej - pięć linii z informacją "Witaj czytelniku!". Z tą jednak różnicą, że kod z **3 linijek zwiększył się do 5**.
+```js
+let i = 1;
 
-## Pętla do… while
-
-W tym przypadku na pewno zauważycie ogromne podobieństwo do pętli typu while. Nie ma w tym nic dziwnego. Różnica w praktyce jest jedynie taka, że kod **przynajmniej raz** wykona się przed sprawdzeniem warunku, który zapisany jest tuż za pętlą.
-
-{% highlight javascript %}
-const ilosc = 1; // zdefiniowanie zmiennej
-do { // "wykonaj"
-  document.write(ilosc + ". Witaj czytelniku!<br />"); // wyswietl ciag znakow
-  ilosc++; // zwieksz zmienna o 1
-} while (ilosc<6) // jezeli zmienna ilosc jest mniejsza niz 6
-{% endhighlight %}
+do {
+  console.log(`${i} Witaj czytelniku!`);
+  i++; // zwiększenie zmiennej o 1
+} while (i < 6) // warunek
+```
 
 ## Podsumowanie #004
-
-Sprawa dosyć prosta i bardzo często wykorzystywana w programowaniu. Na pewno nie raz (i nie dwa) będziecie się z nimi spotykać na swojej drodze podczas tworzenia jakichkolwiek projektów. Gdybyście mieli jakiekolwiek pytania - zapraszam do komentowania, postaram się rozwiać wszystkie Wasze wątpliwości. Tymczasem… dziękuję za uwagę i zapraszam do polajkowania [fanpage Frontboard.pl](https://www.facebook.com/frontboardpl/).
+Sprawa dosyć prosta i bardzo często wykorzystywana w programowaniu. Na pewno nie raz będziecie się z nimi spotykać na swojej drodze podczas tworzenia projektów. Gdybyście mieli jakiekolwiek pytania - zapraszam do komentowania, postaram się rozwiać wszystkie Wasze wątpliwości. Tymczasem… dziękuję za uwagę i zapraszam do polajkowania [fanpage Frontboard.pl](https://www.facebook.com/frontboardpl/).
