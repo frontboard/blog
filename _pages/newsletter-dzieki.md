@@ -1,6 +1,10 @@
 ---
-layout: page
+layout: landing
 permalink: /newsletter-dzieki
+title: E-mail potwierdzony ✅
+image: /assets/img/newsletter-thanks.svg
 hidden: true
 ---
-Zapisano Cię na newsletter (e-mail został potwierdzony).
+Dzięki za zapis na newsletter! **Twój adres e-mail został potwierdzony**.
+
+Hmm, co teraz? Przechodzisz na [stronę główną 🏠](/) czy może chcesz dowiedzieć się czegoś więcej [o mnie 💭](/o-mnie)?
