@@ -529,3 +529,39 @@ a {
 .newsletter__input:focus + .newsletter__label {
   color: $color-brand;
 }
+
+// Landing
+.landing { 
+  @include media-query($on-laptop) {
+    width: 75%;
+    margin: 50px auto 0 auto;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  &__header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  &__title {
+    font-size: 1.5em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin: 0 0 15px 0 !important;
+  }
+  &__image {
+    max-width: 180px;
+    height: 180px;
+
+    @include media-query($on-laptop) {
+      margin-right: 60px;
+    }
+  }
+  &__content {
+    margin-bottom: 0;
+
+    p:last-child {
+      margin: 15px 0 0 0;
+    }
+  }
+}

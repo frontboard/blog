@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="container">
+  <article class="landing newsletter">
+    <header class="landing__header">
+      {% if page.image %}<img src="{{ page.image }}" alt="{{ site.author }}" class="landing__image">{% endif %}
+    </header>
+
+    <div class="article__content landing__content"> 
+      <h1 class="landing__title">{{ page.title | escape }}</h1>
+
+      {{ content }}
+    </div>
+
+  </article>
+</div>
