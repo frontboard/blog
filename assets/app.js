@@ -9,7 +9,9 @@ const isHeaderSticky = () => {
   }
 };
 
-window.addEventListener('scroll', isHeaderSticky);
+window.addEventListener('load', () => {
+  window.addEventListener('scroll', isHeaderSticky);
+});
 
 // Menu dropdown on click
 const hamburgerMenu = document.querySelector('#nav-toggler');

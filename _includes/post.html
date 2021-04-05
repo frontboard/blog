@@ -2,7 +2,7 @@
   <div class="post__details">
     {%- if post.img -%}
       <a href="{{ post.url | relative_url }}">
-        <img src="{{ post.img | prepend: '/assets/img/posts/' }}" alt="{{ post.title }}" class="post__image">
+        <img src="{{ post.img | prepend: '/assets/img/posts/' }}" alt="{{ post.title }}" class="post__image" width="960" height="540">
       </a>
     {%- endif -%}
 
