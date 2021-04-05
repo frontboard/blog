@@ -42,8 +42,8 @@ const newsletter = {
 
   validate: (event) => {
     const form = {
-      firstname: document.querySelector('#MERGE1').value,
-      email: document.querySelector('#MERGE0').value,
+      firstname: document.querySelector('#fields[first_name]').value,
+      email: document.querySelector('#email_address').value,
       checkbox: document.querySelector('#privacy').checked
     };
 
