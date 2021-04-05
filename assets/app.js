@@ -42,7 +42,7 @@ const newsletter = {
 
   validate: (event) => {
     const form = {
-      firstname: document.querySelector('#fields[first_name]').value,
+      firstname: document.querySelector('#first_name').value,
       email: document.querySelector('#email_address').value,
       checkbox: document.querySelector('#privacy').checked
     };
