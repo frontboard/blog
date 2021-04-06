@@ -77,6 +77,8 @@ button.addEventListener('click', toggleTheme);
 ```
 
 ## Zapis wyboru użytkownika
+Temat `localStorage` został przeze mnie opisany we wpisie "[Jak zarządzać Storage w JavaScript?](/zarzadzanie-storage-javascript)". Zrzuć okiem, jeśli chcesz dowiedzieć się czegoś więcej na temat interfejsu Storage w JS.
+
 Aby nie powielać tych samych wartości w kilku miejscach, stwórzmy prostą konfigurację:
 
 ```js
