@@ -12,6 +12,11 @@ a {
   color: $color-brand;
 }
 
+::selection {
+  background: rgba($color-brand, 0.8);
+  color: #fff;
+}
+
 // Helpers
 .flex {
   display: flex;
