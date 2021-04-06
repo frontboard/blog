@@ -20,6 +20,11 @@ p {
   pre, code {
     font-family: monospace;
   }
+  code {
+    background: #f9f9f9;
+    padding: 3px 5px;
+    border-radius: 2px;
+  }
   a {
     color: inherit;
 
