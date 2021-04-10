@@ -1,23 +1,32 @@
 ---
 layout: default
 ---
-<div class="container article__container">
+<div>
   <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="container article__container">
+      <header class="article__header">
+        <time class="article__meta" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {% include date.html date=page.date %}
+        </time>
+        <span class="separator">·</span>
+        <a href="#disqus_thread" class="article__authorLink">Przejdź do komentarzy</a>
+        <h1 class="article__title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+          {%- include author.html author_id=page.author -%}
+        </p>
+      </header>
+    </div>
 
-    <header class="article__header">
-      <time class="article__meta" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% include date.html date=page.date %}
-      </time>
-      <span class="separator">·</span>
-      <a href="#disqus_thread" class="article__authorLink">Przejdź do komentarzy</a>
-      <h1 class="article__title" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="post-meta">
-        {%- include author.html author_id=page.author -%}
-      </p>
-    </header>
+    {%- if page.img -%}
+    <div class="article__imageContainer full-width">
+      <img src="{{ page.img | prepend: '/assets/img/posts/' }}" class="article__image" width="960" height="540">
+    </div>
+    {%- endif -%}
 
-    <div class="article__content e-content" itemprop="articleBody">
-      {{ content }}
+    <div class="container article__container">
+      <div class="article__content e-content" itemprop="articleBody">
+        {{ content }}
+      </div>
     </div>
 
     {%- include newsletter.html -%}
