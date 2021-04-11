@@ -1,17 +1,47 @@
 // Sticky header
-const header = document.querySelector('.header');
+// const header = document.querySelector('.header');
 
-const isHeaderSticky = () => {
-  if (window.pageYOffset > 0) {
-    header.classList.add('header__isSticky');
-  } else {
-    header.classList.remove('header__isSticky');
+// const isHeaderSticky = () => {
+//   if (window.pageYOffset > 0) {
+//     header.classList.add('header__isSticky');
+//   } else {
+//     header.classList.remove('header__isSticky');
+//   }
+// };
+const body = document.body;
+// const triggerMenu = document.querySelector(".page-header .trigger-menu");
+// const nav = document.querySelector(".page-header nav");
+const header = document.querySelector(".header");
+const scrollUp = "header__scroll-up";
+const scrollDown = "header__scroll-down";
+let lastScroll = 0;
+
+// triggerMenu.addEventListener("click", () => {
+//   body.classList.toggle("menu-open");
+// });
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    header.classList.remove(scrollUp);
+    return;
   }
-};
-
-window.addEventListener('load', () => {
-  window.addEventListener('scroll', isHeaderSticky);
+  
+  if (currentScroll > lastScroll && !header.classList.contains(scrollDown)) {
+    // down
+    header.classList.remove(scrollUp);
+    header.classList.add(scrollDown);
+  } else if (currentScroll < lastScroll && header.classList.contains(scrollDown)) {
+    // up
+    header.classList.remove(scrollDown);
+    header.classList.add(scrollUp);
+  }
+  lastScroll = currentScroll;
 });
+
+// window.addEventListener('load', () => {
+//   window.addEventListener('scroll', header);
+// });
 
 // Menu dropdown on click
 const hamburgerMenu = document.querySelector('#nav-toggler');

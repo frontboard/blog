@@ -31,13 +31,17 @@ layout: default
 
     {%- include newsletter.html -%}
 
+    <div class="container">
     {%- if site.disqus.shortname -%}
       {%- include disqus_comments.html -%}
     {%- endif -%}
+    </div>
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
   </article>
-  <div class="article__sidebar">
-    {%- include sidebar.html -%}
+  <div class="container">
+    <div class="article__sidebar">
+      {%- include sidebar.html -%}
+    </div>
   </div>
 </div>
