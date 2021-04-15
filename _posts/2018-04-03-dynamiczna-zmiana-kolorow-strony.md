@@ -5,7 +5,6 @@ author: kstawinski
 layout: post
 categories: javascript
 img: ts.jpg
-permalink: /theme-switcher
 redirect_from:
   - /dynamiczna-zmiana-kolorow-strony/
 ---
