@@ -160,10 +160,21 @@ a {
       color: $color-brand;
     }
     &-featured {
-      background: rgba($color-brand, 0.08);
-      color: $color-brand;
+      background: $color-brand;
+      color: #fff;
       border-radius: 50px;
-      text-align: center;
+      font-family: $font-secondary;
+      transition: 0.3s all;
+      border: 1px solid $color-brand;
+
+      span {
+        margin-left: 3px;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $color-brand;
+        background-color: transparent;
+      }
     }
   }
   @include media-query($on-laptop) {
