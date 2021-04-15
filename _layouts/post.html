@@ -5,7 +5,9 @@ layout: default
   <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="container article__container">
       <header class="article__header">
-        <a href="/kategorie#{{ page.categories }}" class="article__category">{{ page.categories }}</a>
+        {% for category in page.categories %}
+        <a href="/kategorie#{{ category }}" class="article__category">{{ category }}</a>
+        {% endfor %}
         <h1 class="article__title" itemprop="name headline">{{ page.title | escape }}</h1>
         <p class="post-meta">
           {%- include author.html author_id=page.author -%}
