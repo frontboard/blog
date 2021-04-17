@@ -37,16 +37,15 @@ layout: default
         </div>
         {%- include share.html -%}
       </footer>
-
-      {%- include newsletter.html -%}
-
-      <div class="container">
-      {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
-      {%- endif -%}
-      </div>
     </div>
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
   </article>
+
+  {%- include newsletter.html -%}
+    {%- if site.disqus.shortname -%}
+      <div class="article__comments">
+        {%- include disqus_comments.html -%}
+      </div>
+    {%- endif -%}
 </div>
