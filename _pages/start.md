@@ -3,7 +3,7 @@ layout: page
 title: Zacznij tutaj
 permalink: /start
 ---
-# Hej! 🙌
+## Hej! 🙌
 Jest mi bardzo miło gościć Cię na moim blogu, powstałym w 2017 roku przy okazji rozpoczęcia [projektu JavaScript w 60 dni](/podsumowanie-projektu-javascript-60-dni). Poniżej znajdziesz kilka przydatnych informacji i linków, a jeśli chcesz dowiedzieć się czegoś więcej na mój temat, przejdź na stronę [o mnie](/o-mnie).
 
 ## O czym piszę? 👀
