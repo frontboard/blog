@@ -2,7 +2,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
+  {%- seo title=false -%}
+  <title>
+    {% if page.tag or page.title %}
+      {{ page.title | escape }} –
+    {% endif %}
+    {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
+      Strona {{ paginator.page }} z {{ paginator.total_pages }} | 
+    {% endif %}
+    {{ site.title | escape }}
+    {% unless page.tag or page.title %}
+      – {{ site.tagline | escape }}
+    {% endunless %}
+  </title>
   <link rel="stylesheet" href="{{ '/assets/reset.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/prism.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">

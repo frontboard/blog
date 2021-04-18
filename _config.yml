@@ -1,10 +1,11 @@
 # Blog settings
 title: Frontboard
+tagline: blog o front-endzie
 author: Kacper Stawiński
 email: kontakt@frontboard.pl
 description: >-
-  Blog o front-endzie: poradniki, nowości i inspiracje dotyczące HTML i CSS,
-  JavaScript, Vue.js i ogólnych dobrych praktyk programisty.
+  Blog o front-endzie: poradniki, nowości i inspiracje dotyczące programowania.
+  Głównie JavaScript, Vue.js, HTML i CSS i coś o dobrych praktykach programisty.
 baseurl: ""
 url: "https://frontboard.pl"
 github_username:  frontboard
