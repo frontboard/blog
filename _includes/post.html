@@ -1,17 +1,23 @@
 <li class="post">
-  <div class="post__details">
+  <div>
     {%- if post.img -%}
-      <a href="{{ post.url | relative_url }}">
+      <a href="{{ post.url | relative_url }}" class="post__imageContainer">
         <img src="{{ post.img | prepend: '/assets/img/posts/' }}" alt="{{ post.title }}" class="post__image" width="960" height="540">
       </a>
     {%- endif -%}
+    
+    <div class="post__details">
+      <div class="post__meta">
+        {% for category in post.categories %}
+        <a href="/kategorie#{{ category }}" class="post__category">{{ category }}</a>
+        {% endfor %}
+      </div>
 
-    <div class="post__meta">{% include date.html date=post.date %}</div>
+      <a href="{{ post.url | relative_url }}" class="post__link">
+        <div class="post__title">{{ post.title }}</div>
+      </a>
 
-    <a href="{{ post.url | relative_url }}" class="post__link">
-      <div class="post__title">{{ post.title }}</div>
-    </a>
-
-    <p class="post__p">{{ post.excerpt | strip_html }}</p>
+      <p class="post__p">{{ post.excerpt | strip_html }}</p>
+    </div>
   </div>
 </li>
