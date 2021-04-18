@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
   padding-top: 80px;
 }
+
 a {
   color: $color-brand;
 }
@@ -15,6 +16,17 @@ a {
 ::selection {
   background: rgba($color-brand, 0.8);
   color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @include media-query($on-laptop) {
+    &__large {
+      width: 95%;
+    }
+  }
 }
 
 // Helpers
@@ -28,16 +40,6 @@ a {
   &__center {
     align-items: center;
   }
-}
-.separator {
-  opacity: 0.3;
-  padding: 0 5px;
-}
-
-.container {
-  width: 90%;
-  // max-width: 1200px;
-  margin: 0 auto;
 }
 
 // Mobiles only
@@ -90,18 +92,10 @@ a {
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
-  transition: transform 0.5s;
+  transition: transform 1s;
   margin-bottom: 50px;
+  z-index: 2;
 
-  // &__isSticky {
-  //   box-shadow: 0 3px 3px -3px rgba(#000, 0.1);
-    // position: sticky;
-    // top: 0;
-    // left: 0;
-  //   z-index: 1;
-  //   backdrop-filter: blur(7px);
-  //   background: rgba(#fff, 0.8);
-  // }
   &__scroll {
     &-down {
       transform: translate3d(0, -100%, 0);
@@ -109,9 +103,7 @@ a {
     &-up {
       transform: none;
       box-shadow: 0 3px 3px -3px rgba(#000, 0.1);
-      // padding: 20px 0;
-      backdrop-filter: blur(10px);
-      background: rgba(#fff, 0.8);
+      background: #FFF;
     }
   }
   &__title {
@@ -166,6 +158,7 @@ a {
       font-family: $font-secondary;
       transition: 0.3s all;
       border: 1px solid $color-brand;
+      text-align: center;
 
       span {
         margin-left: 3px;
@@ -204,7 +197,7 @@ a {
 
 // Home
 .home {
-  margin-top: 18px;
+  margin-top: 55px;
 }
 
 // Article
@@ -213,16 +206,24 @@ a {
     line-height: 1.6;
     color: $color-text;
     margin-bottom: 60px;
-    padding: 20px;
+    @include media-query($on-laptop) {
+      padding: 20px;
+    }
 
     @include content-formatting;
   }
   &__container {
-    width: 70%;
+    @include media-query($on-laptop) {
+      width: 70%;
+
+      > .article__content {
+        p:first-child {
+          font-size: 1.2em;
+          margin-bottom: 40px;
+        }
+      }
+    }
   }
-  // &__sidebar {
-  //   margin: 30px 0;
-  // }
   &__category {
     padding: 3px;
     text-transform: uppercase;
@@ -230,23 +231,34 @@ a {
     text-decoration: none;
   }
   &__imageContainer {
-    width: 80%;
+    @include media-query($on-laptop) {
+      width: 80%;
+    }
     margin: 0 auto;
   }
   &__image {
     width: 100%;
     height: auto;
-    margin: 20px;
+    @include media-query($on-laptop) {
+      margin: 20px;
+    }
   }
   &__header {
-    margin: 100px 0 20px 0;
+    margin: 50px 0 30px 0;
+    @include media-query($on-laptop) {
+      margin: 100px 0 20px 0;
+    }
     text-align: center;
   }
   &__title {
     font-weight: 500;
     margin: 20px 0 25px 0;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: $font-secondary;
+
+    @include media-query($on-laptop) {
+      font-size: 2.5em;
+    }
   }
   &__authorImage {
     width: 35px;
@@ -270,17 +282,7 @@ a {
   }
   @include media-query($on-laptop) {
     width: 75%;
-    // new properties
     margin: 0 auto;
-
-    // &__container {
-    //   display: flex;
-    //   justify-content: space-between;
-    // }
-    // &__sidebar {
-    //   width: 23%;
-    //   margin-top: 190px;
-    // }
   }
   &__comments {
     background: #f7f7f7;
@@ -323,7 +325,6 @@ a {
   }
   &__logo {
     max-height: 20px;
-    // opacity: 0.2;
     margin-right: 20px;
   }
   &__socials {
@@ -395,22 +396,19 @@ a {
 }
 
 // Post (in home layout)
-.home__posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-  grid-gap: 60px;
-  grid-auto-flow: dense;
-  margin-bottom: 30px;
+@include media-query($on-laptop) {
+  .home__posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 60px;
+    grid-auto-flow: dense;
+    margin-bottom: 30px;
+  }
 }
 .post {
   &__link {
     color: inherit;
     text-decoration: none;
-
-    // &:hover {
-      // color: $color-brand;
-      // text-decoration: underline;
-    // }
   }
   &__category {
     font-family: $font-secondary;
@@ -418,7 +416,10 @@ a {
     text-decoration: none;
   }
   &__details {
-    padding: 25px;
+    padding: 15px;
+    @include media-query($on-laptop) {
+      padding: 25px;
+    }
   }
   &__title {
     margin: 10px 0 15px 0;
@@ -542,7 +543,6 @@ a {
   &__input {
     background: #f8f8f8;
     border: 0;
-    // border-bottom: 2px solid #f8f8f8;
     padding: 10px;
     border-radius: 4px;
     font-family: inherit;
@@ -587,7 +587,6 @@ a {
     font-size: 16px;
     color: #fff;
     font-family: inherit;
-    // margin-top: 20px;
     margin-top: 30px;
     padding: 8px 20px;
     border: 0;
