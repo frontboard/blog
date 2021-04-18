@@ -3,13 +3,14 @@ title: Frontboard
 author: Kacper Stawiński
 email: kontakt@frontboard.pl
 description: >-
-  Notatki front-end developera. Mini-blog, który służy zbieraniu
-  interesujących i przede wszystkim przydatnych w pracy programisty treści.
+  Blog o front-endzie: poradniki, nowości i inspiracje dotyczące HTML i CSS,
+  JavaScript, Vue.js i ogólnych dobrych praktyk programisty.
 baseurl: ""
 url: "https://frontboard.pl"
 github_username:  frontboard
 facebook_username: frontboardpl
 twitter_username: frontboardpl
+instagram_username: frontboard_pl
 lang: pl
 google_analytics: G-SPHS5KD25L
 
