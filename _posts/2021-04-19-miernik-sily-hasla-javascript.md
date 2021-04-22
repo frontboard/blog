@@ -10,7 +10,7 @@ Miernik siły hasła stanowi interesującą wskazówkę dla użytkownika podczas
 
 Jak powinno wyglądać bezpieczne hasło? Przede wszystkim, powinno składać się z kombinacji różnych znaków (małe i wielkie litery, cyfry, znaki specjalne). Równie ważna jest długość :) Tworząc 6 znakowe hasło składające się z małych liter polskiego alfabetu masz do dyspozycji **32^6 (1 073 741 824) możliwych kombinacji**. Wykorzystując na przykład: cyfry od 0 do 9 (dziesięć znaków), małe i wielkie litery polskiego alfabetu (sześćdziesiąt cztery znaki) i tworząc 16 znakowe hasło, tych kombinacji uzyskasz 74^16. No, dużo w każdym razie ;)
 
-[🚀 Demo](https://frontboard.github.io/password-strength-js/) / [Kod źródłowy](https://github.com/frontboard/password-strength-js)
+[👀 Zobacz demo poniżej](#demo)
 
 ## Szablon w HTML-u
 Pracę nad miernikiem siły hasła zacznijmy od stworzenia w HTML-u pola tekstowego. Celowo używam typu `text` zamiast `password`, bo dzięki temu będziemy w stanie zobaczyć czy miernik reaguje prawidłowo na wprowadzane znaki.
@@ -113,4 +113,6 @@ meter::-webkit-meter-even-less-good-value {
 
 To wszystko! Zerknij na demo poniżej, a jeśli chcesz otrzymywać informacje między innymi o takich wpisach, zostaw swojego maila niżej 🙌
 
-<script async src="//jsfiddle.net/frontboard/job35mkh/1/embed/"></script>
+<div id="demo">
+  <script async src="//jsfiddle.net/frontboard/job35mkh/embed/"></script>
+</div>
