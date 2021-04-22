@@ -89,4 +89,6 @@ const newsletter = {
   },
 };
 
-newsletter.button.addEventListener('click', (event) => newsletter.validate(event));
+if (newsletter.button) {
+  newsletter.button.addEventListener('click', (event) => newsletter.validate(event));
+}
