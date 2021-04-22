@@ -1,64 +1,69 @@
-// Sticky header
-// const header = document.querySelector('.header');
+// 1. Show header on scroll
+// 2. Hamburger menu dropdown
+// 3. Newsletter validation
 
-// const isHeaderSticky = () => {
-//   if (window.pageYOffset > 0) {
-//     header.classList.add('header__isSticky');
-//   } else {
-//     header.classList.remove('header__isSticky');
-//   }
-// };
-const body = document.body;
-// const triggerMenu = document.querySelector(".page-header .trigger-menu");
-// const nav = document.querySelector(".page-header nav");
-const header = document.querySelector(".header");
-const scrollUp = "header__scroll-up";
-const scrollDown = "header__scroll-down";
-let lastScroll = 0;
+// 1. Show header on scroll
+const header = {
+  target: document.querySelector('.header'),
+  scrollUpClass: 'header__scroll-up',
+  scrollDownClass: 'header__scroll-down',
 
-// triggerMenu.addEventListener("click", () => {
-//   body.classList.toggle("menu-open");
-// });
+  lastScroll: 0,
 
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= 0) {
-    header.classList.remove(scrollUp);
-    return;
-  }
-  
-  if (currentScroll > lastScroll && !header.classList.contains(scrollDown)) {
-    // down
-    header.classList.remove(scrollUp);
-    header.classList.add(scrollDown);
-  } else if (currentScroll < lastScroll && header.classList.contains(scrollDown)) {
-    // up
-    header.classList.remove(scrollDown);
-    header.classList.add(scrollUp);
-  }
-  lastScroll = currentScroll;
-});
+  show: () => {
+    header.target.classList.remove(header.scrollDownClass);
+    header.target.classList.add(header.scrollUpClass);
+  },
 
-// window.addEventListener('load', () => {
-//   window.addEventListener('scroll', header);
-// });
+  hide: () => {
+    header.target.classList.remove(header.scrollUpClass);
+    header.target.classList.add(header.scrollDownClass);
+  },
 
-// Menu dropdown on click
-const hamburgerMenu = document.querySelector('#nav-toggler');
+  scrollMonitor: () => {
+    let currentScroll = window.pageYOffset;
 
-const toggleMenu = () => {
-  if (hamburgerMenu.checked) {
-    document.querySelector('header.header').classList.add('header__opened');
-    document.querySelectorAll('.trigger').forEach((el) => el.classList.add('trigger__open'));
-  } else {
-    document.querySelector('header.header').classList.remove('header__opened');
-    document.querySelectorAll('.trigger').forEach((el) => el.classList.remove('trigger__open'));
-  }
+    if (currentScroll <= 0) {
+      header.target.classList.remove(header.scrollUpClass);
+      return;
+    }
+
+    if (currentScroll > header.lastScroll) {
+      // scroll down
+      header.hide();
+    } else if (currentScroll < header.lastScroll) {
+      // scroll up
+      header.show();
+    }
+
+    header.lastScroll = currentScroll;
+  },
 };
 
-hamburgerMenu.addEventListener('input', toggleMenu);
+window.addEventListener('scroll', () => header.scrollMonitor());
 
-// Newsletter validation
+// 2. Hamburger menu dropdown
+const menu = {
+  hamburger: document.querySelector('#nav-toggler'),
+  header: document.querySelector('header.header'),
+  triggers: document.querySelectorAll('.trigger'),
+
+  toggleMenu: () => {
+    if (menu.hamburger.checked) {
+      // on open
+      menu.header.classList.add('header__opened');
+      menu.triggers.forEach((el) => el.classList.add('trigger__open'));
+    } else {
+      // on close
+      menu.header.classList.remove('header__opened');
+      menu.triggers.forEach((el) => el.classList.remove('trigger__open'));
+    }
+  },
+};
+
+menu.hamburger.addEventListener('input', () => menu.toggleMenu());
+
+// 3. Newsletter validation
 const newsletter = {
   button: document.querySelector('#newsletter-submit'),
   error: document.querySelector('.newsletter__error'),
