@@ -406,6 +406,12 @@ a {
   }
 }
 .post {
+  margin-bottom: 40px;
+
+  @include media-query($on-laptop) {
+    margin-bottom: 0;
+  }
+
   &__link {
     color: inherit;
     text-decoration: none;
@@ -416,7 +422,7 @@ a {
     text-decoration: none;
   }
   &__details {
-    padding: 15px;
+    padding: 25px 15px;
     @include media-query($on-laptop) {
       padding: 25px;
     }
