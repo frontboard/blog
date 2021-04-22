@@ -35,12 +35,12 @@ Na potrzeby projektu przyjmijmy, że bezpieczne hasło powinno:
 Po spełnieniu wszystkich założeń, cały pasek wypełni się zielonym kolorem.
 
 ## Funkcja mierząca siłę hasła
-Stwórzmy funkcję, której parametrem będzie hasło wprowadzone w polu `input`. Zawarta w funkcji tablica `conditions` przyjmie wartości logiczne przy każdym warunku do spełnienia, jako wynik dopasowania [wyrażenia regularnego](https://frontboard.pl/wyrazenia-regularne-regexp-javascript-wstep) do przekazanego hasła (poza pierwszym elementem, bo sprawdzamy tam długość hasła nie regexem, a operatorem).
+Stwórzmy funkcję, której parametrem będzie hasło wprowadzone w polu `input`. Zawarta w niej tablica `conditions` przyjmie wartości logiczne przy każdym warunku do spełnienia, jako wynik dopasowania [wyrażenia regularnego](https://frontboard.pl/wyrazenia-regularne-regexp-javascript-wstep) do przekazanego hasła (poza pierwszym elementem, bo sprawdzamy tam długość hasła nie regexem, a operatorem).
 
 ```js
 function passwordStrength(password) {
   const conditions = [
-  	password.length >= 15,
+    password.length >= 15,
     /[0-9]/.test(password),
     /[a-ząćęłńóśźż]/.test(password),
     /[A-ZĄĆĘŁŃÓŚŹŻ]/.test(password),
@@ -71,8 +71,8 @@ function passwordStrength(password) {
   let strength = 0;
 
   conditions.forEach((condition) => {
-  	if (condition) {
-    	strength += 100 / conditions.length;
+    if (condition) {
+      strength += 100 / conditions.length;
     }
   });
 
@@ -83,7 +83,7 @@ function passwordStrength(password) {
 Na końcu **funkcja zwraca siłę hasła od 0 do 100 (%)**.
 
 ### Podpięcie funkcji do pola tekstowego
-Jakakolwiek zmiana w `input` powinna wywołać ponowne przeliczenie siły hasła – obsłużymy to zdarzeniem `input` za pomocą [metody `addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
+Jakakolwiek zmiana w `input` powinna wywołać ponowne przeliczenie siły hasła. Obsłużymy to zdarzeniem `input` za pomocą [metody `addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
 
 ```js
 document.querySelector('input').addEventListener('input', (event) => {
