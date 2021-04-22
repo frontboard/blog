@@ -8,9 +8,9 @@ img: miernik-sily-hasla-javascript.jpg
 ---
 Miernik siły hasła stanowi interesującą wskazówkę dla użytkownika podczas np. rejestracji konta. Warto przedstawić odwiedzającemu wymagania, jakie musi spełniać hasło, by zostało uznane za bezpieczne i pokazać siłę hasła za pomocą poniższej funkcji.
 
-Jak powinno wyglądać bezpieczne hasło? Przede wszystkim, powinno składać się z kombinacji różnych znaków (małe i wielkie litery, cyfry, znaki specjalne). Równie ważna jest długość :) Tworząc 6 znakowe hasło składające się z małych liter polskiego alfabetu masz do dyspozycji "jedynie" **32^6 (1 073 741 824) kombinacji**. Wykorzystując na przykład: cyfry od 0 do 9 (dziesięć znaków), małe i wielkie litery polskiego alfabetu (sześćdziesiąt cztery znaki) i tworząc 16 znakowe hasło, tych kombinacji uzyskasz 74^16. No, w każdym razie bardzo dużo...
+Jak powinno wyglądać bezpieczne hasło? Przede wszystkim, powinno składać się z kombinacji różnych znaków (małe i wielkie litery, cyfry, znaki specjalne). Równie ważna jest długość :) Tworząc 6 znakowe hasło składające się z małych liter polskiego alfabetu masz do dyspozycji **32^6 (1 073 741 824) możliwych kombinacji**. Wykorzystując na przykład: cyfry od 0 do 9 (dziesięć znaków), małe i wielkie litery polskiego alfabetu (sześćdziesiąt cztery znaki) i tworząc 16 znakowe hasło, tych kombinacji uzyskasz 74^16. No, dużo w każdym razie ;)
 
-[🚀 Demo](https://frontboard.github.io/password-strength-js/) / [Kod źródłowy](https://github.com/frontboard/password-strength-js)
+[👀 Zobacz demo poniżej](#demo)
 
 ## Szablon w HTML-u
 Pracę nad miernikiem siły hasła zacznijmy od stworzenia w HTML-u pola tekstowego. Celowo używam typu `text` zamiast `password`, bo dzięki temu będziemy w stanie zobaczyć czy miernik reaguje prawidłowo na wprowadzane znaki.
@@ -26,63 +26,64 @@ Element [`meter`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mete
 ```
 
 ## Warunki bezpiecznego hasła
-Na potrzeby projektu przyjmijmy, że bezpieczne hasło (miernik przyjmie wówczas wartość 100) powinno:
+Na potrzeby projektu przyjmijmy, że bezpieczne hasło powinno:
 * mieć **minimalną długość 15 znaków**,
 * zawierać **minimum jedną wielką literę**,
 * zawierać **minimum jedną małą literę**,
 * zawierać **minimum jeden znak specjalny**.
 
+Po spełnieniu wszystkich założeń, cały pasek wypełni się zielonym kolorem.
+
 ## Funkcja mierząca siłę hasła
-Stwórzmy funkcję, której parametrem jest hasło wprowadzone w polu `input`. Zawarty w funkcji obiekt `conditions` przyjmie wartości logiczne przy każdym warunku (jako test dopasowania [wyrażenia regularnego](https://frontboard.pl/wyrazenia-regularne-regexp-javascript-wstep) do przekazanego hasła) do spełnienia.
+Stwórzmy funkcję, której parametrem będzie hasło wprowadzone w polu `input`. Zawarta w niej tablica `conditions` przyjmie wartości logiczne przy każdym warunku do spełnienia, jako wynik dopasowania [wyrażenia regularnego](https://frontboard.pl/wyrazenia-regularne-regexp-javascript-wstep) do przekazanego hasła (poza pierwszym elementem, bo sprawdzamy tam długość hasła nie regexem, a operatorem).
 
 ```js
 function passwordStrength(password) {
-  const conditions = {
-    length: password.length >= 15,
-    number: /[0-9]/.test(password),
-    smallLetter: /[a-ząćęłńóśźż]/.test(password),
-    capitalLetter: /[A-ZĄĆĘŁŃÓŚŹŻ]/.test(password),
-    specialCharacter: /[*.! @#$%^&(){}[\]:;<>,.?\/~_+\-=|]/.test(password)
-  };
+  const conditions = [
+    password.length >= 15,
+    /[0-9]/.test(password),
+    /[a-ząćęłńóśźż]/.test(password),
+    /[A-ZĄĆĘŁŃÓŚŹŻ]/.test(password),
+    /[*.! @#$%^&(){}[\]:;<>,.?\/~_+\-=|]/.test(password)
+  ];
 }
 ```
 
-Dla hasła `AAAł!@;` obiekt `conditions` przyjmie poniższe wartośći:
+Dla hasła `AAAł!@;` tablica `conditions` przyjmie poniższe wartośći:
 
 ```js
-{
-  length: false, // nieodpowiednia długość
-  number: false, // brak cyfry
-  smallLetter: true, // jest mała litera (ł)
-  capitalLetter: true, // jest wielka litera (A)
-  specialCharacter: true, // jest znak specjalny (!)
-}
+[
+  false, // nieodpowiednia długość
+  false, // brak cyfry
+  true, // jest mała litera (ł)
+  true, // jest wielka litera (A)
+  true // jest znak specjalny (!)
+]
 ```
 
 ### Obliczenie siły hasła
-Aby uzyskać siłę hasła przeiterujemy obiekt z warunkami do spełnienia za pomocą [pętli `for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) i za każdym razem jeśli ten został uznany za prawdziwy, zwiększymy wartość zmiennej `strength` o wartość 100/n n-elementowego obiektu `conditions`. Może brzmi to trochę skomplikowanie, ale zobaczysz, że nie jest to trudne.
+Aby uzyskać siłę hasła przeiterujemy tablicę z warunkami do spełnienia za pomocą [pętli `forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach). Za każdym razem jeśli ten został uznany za prawdziwy, zwiększymy wartość zmiennej `strength` o taką samą wartość.
 
 ```js
 function passwordStrength(password) {
-  // obiekt conditions
+  // tablica conditions
 
   let strength = 0;
-  for (const condition in conditions) {
-    if (conditions[condition]) {
-      strength += 100 / Object.keys(conditions).length;
+
+  conditions.forEach((condition) => {
+    if (condition) {
+      strength += 100 / conditions.length;
     }
-  }
+  });
 
   return strength;
 }
 ```
 
-[`Object.keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) zwraca tablicę z nazwami wartości, a [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length) jej długość. Dlaczego korzystam z `Object.keys().length` zamiast po prostu wstawić `20`? **Przy dodaniu warunku nie będzie konieczna aktualizacja tej wartości**, JS zrobi to sam.
-
 Na końcu **funkcja zwraca siłę hasła od 0 do 100 (%)**.
 
 ### Podpięcie funkcji do pola tekstowego
-Jakakolwiek zmiana w `input` powinna wywołać ponowne przeliczenie siły hasła – obsłużymy to zdarzeniem `input` za pomocą [metody `addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
+Jakakolwiek zmiana w `input` powinna wywołać ponowne przeliczenie siły hasła. Obsłużymy to zdarzeniem `input` za pomocą [metody `addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
 
 ```js
 document.querySelector('input').addEventListener('input', (event) => {
@@ -100,7 +101,7 @@ Aby znacznik `meter` reagował zmianą koloru na podstawioną wartość, należ
 ```
 
 ## Płynna zmiana wartości `meter`
-Stylowanie w przypadku tego projektu zamyka się na określeniu sposobu animacji szerokości wypełnionego paska pseudoelementów. Chcąc, aby miernik uzupełniał się płynnie, skorzystamy z trzech poniższych pseudoelementów. 
+Stylowanie w moim przypadku zamyka się na określeniu sposobu animacji szerokości wypełnionego paska. Chcąc, aby miernik uzupełniał się płynnie, skorzystamy z trzech poniższych pseudoelementów i właściwości `transition`. 
 
 ```css
 meter::-webkit-meter-optimum-value,
@@ -110,8 +111,8 @@ meter::-webkit-meter-even-less-good-value {
 }
 ```
 
-To wszystko! Zerknij na demo poniżej, a jeśli chcesz otrzymywać informacje między innymi o takich wpisach, zostaw swojego maila niżej. 
+To wszystko! Zerknij na demo poniżej, a jeśli chcesz otrzymywać informacje między innymi o takich wpisach, zostaw swojego maila niżej 🙌
 
-<div>
-  <iframe src="https://frontboard.github.io/password-strength-js/" style="width: 100%;min-height: 250px;"></iframe>
+<div id="demo">
+  <script async src="//jsfiddle.net/frontboard/job35mkh/embed/"></script>
 </div>
